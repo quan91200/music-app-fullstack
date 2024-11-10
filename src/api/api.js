@@ -1,147 +1,168 @@
+/* eslint-disable import/no-anonymous-default-export */
 import axios from 'axios'
 
 const API_URL = 'http://localhost:8800/api'
 
-// User API
+// Hàm lấy dữ liệu người dùng
 export const fetchUserData = async (userId) => {
     try {
-        const response = await axios.get(`${API_URL}/users/find/${userId}`)
+        const response = await axios.get(`${API_URL}/users/${userId}`)
         return response.data
     } catch (error) {
-        throw new Error('Error fetching user data: ' + error.message)
+        throw new Error(error.response ? error.response.data : error.message)
     }
 }
 
-export const updateUserData = async (userId, data) => {
-    try {
-        const response = await axios.put(`${API_URL}/users`,
-            { userId, ...data })
-        return response.data
-    } catch (error) {
-        throw new Error('Error updating user data: ' + error.message)
-    }
-}
-
-// Post API
+// Hàm lấy danh sách bài viết
 export const fetchPosts = async () => {
     try {
         const response = await axios.get(`${API_URL}/posts`)
         return response.data
     } catch (error) {
-        throw new Error('Error fetching posts: ' + error.message)
+        throw new Error(error.response ? error.response.data : error.message)
     }
 }
 
-export const addPost = async (data) => {
-    try {
-        const response = await axios.post(`${API_URL}/posts`, data)
-        return response.data
-    } catch (error) {
-        throw new Error('Error adding post: ' + error.message)
-    }
-}
-
-export const deletePost = async (postId) => {
-    try {
-        const response = await axios.delete(`${API_URL}/posts/${postId}`)
-        return response.data
-    } catch (error) {
-        throw new Error('Error deleting post: ' + error.message)
-    }
-}
-
-// Relationship API
-export const fetchRelationships = async (userId) => {
-    try {
-        const response = await axios.get(`${API_URL}/relationships/${userId}`)
-        return response.data
-    } catch (error) {
-        throw new Error('Error fetching relationships: ' + error.message)
-    }
-}
-
-// Like API
-export const fetchLikes = async (postId) => {
-    try {
-        const response = await axios.get(`${API_URL}/likes?postId=${postId}`)
-        return response.data
-    } catch (error) {
-        throw new Error('Error fetching likes: ' + error.message);
-    }
-}
-
-export const addLike = async (postId) => {
-    try {
-        const response = await axios.post(`${API_URL}/likes`, { postId })
-        return response.data
-    } catch (error) {
-        throw new Error('Error adding like: ' + error.message)
-    }
-}
-
-export const deleteLike = async (postId) => {
-    try {
-        const response = await axios.delete(`${API_URL}/likes`,
-            { data: { postId } })
-        return response.data
-    } catch (error) {
-        throw new Error('Error deleting like: ' + error.message)
-    }
-}
-
-// Story API
-export const fetchStories = async () => {
-    try {
-        const response = await axios.get(`${API_URL}/stories`)
-        return response.data
-    } catch (error) {
-        throw new Error('Error fetching stories: ' + error.message)
-    }
-}
-
-export const addStory = async (data) => {
-    try {
-        const response = await axios.post(`${API_URL}/stories`, data)
-        return response.data
-    } catch (error) {
-        throw new Error('Error adding story: ' + error.message)
-    }
-}
-
-export const deleteStory = async (storyId) => {
-    try {
-        const response = await axios.delete(`${API_URL}/stories/${storyId}`)
-        return response.data
-    } catch (error) {
-        throw new Error('Error deleting story: ' + error.message)
-    }
-}
-
-// Comment API
+// Hàm lấy bình luận của một bài viết
 export const fetchComments = async (postId) => {
     try {
-        const response = await axios.get(`${API_URL}/comments?postId=${postId}`)
+        const response = await axios.get(`${API_URL}/posts/${postId}/comments`)
         return response.data
     } catch (error) {
-        throw new Error('Error fetching comments: ' + error.message)
+        throw new Error(error.response ? error.response.data : error.message)
     }
 }
 
-export const addComment = async (postId, commentData) => {
+// Hàm lấy lượt thích của một bài viết
+export const fetchLikes = async (postId) => {
     try {
-        const response = await axios.post(`${API_URL}/comments`,
-            { postId, ...commentData })
+        const response = await axios.get(`${API_URL}/posts/${postId}/likes`)
         return response.data
     } catch (error) {
-        throw new Error('Error adding comment: ' + error.message)
+        throw new Error(error.response ? error.response.data : error.message)
     }
 }
 
+// Hàm lấy mối quan hệ người dùng
+export const fetchRelationships = async (userId) => {
+    try {
+        const response = await axios.get(`${API_URL}/users/${userId}/relationships`)
+        return response.data
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm thêm bài viết
+export const addPost = async (newPost) => {
+    try {
+        const response = await axios.post(`${API_URL}/posts`, newPost)
+        return response.data
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm cập nhật bài viết
+export const updatePost = async (updatedPost) => {
+    try {
+        const response = await axios.put(`${API_URL}/posts/${updatedPost.id}`, updatedPost)
+        return response.data
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm xóa bài viết
+export const deletePost = async (postId) => {
+    try {
+        await axios.delete(`${API_URL}/posts/${postId}`)
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm thêm bình luận
+export const addComment = async (newComment) => {
+    try {
+        const response = await axios.post(`${API_URL}/comments`, newComment)
+        return response.data
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm cập nhật bình luận
+export const updateComment = async (updatedComment) => {
+    try {
+        const response = await axios.put(`${API_URL}/comments/${updatedComment.id}`, updatedComment)
+        return response.data
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm xóa bình luận
 export const deleteComment = async (commentId) => {
     try {
-        const response = await axios.delete(`${API_URL}/comments/${commentId}`)
+        await axios.delete(`${API_URL}/comments/${commentId}`)
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm thêm like
+export const addLike = async (newLike) => {
+    try {
+        const response = await axios.post(`${API_URL}/likes`, newLike)
         return response.data
     } catch (error) {
-        throw new Error('Error deleting comment: ' + error.message)
+        throw new Error(error.response ? error.response.data : error.message)
     }
+}
+
+// Hàm xóa like
+export const deleteLike = async (likeId) => {
+    try {
+        await axios.delete(`${API_URL}/likes/${likeId}`)
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm thêm mối quan hệ
+export const addRelationship = async (newRelationship) => {
+    try {
+        const response = await axios.post(`${API_URL}/relationships`, newRelationship)
+        return response.data
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+// Hàm xóa mối quan hệ
+export const deleteRelationship = async (relationshipId) => {
+    try {
+        await axios.delete(`${API_URL}/relationships/${relationshipId}`)
+    } catch (error) {
+        throw new Error(error.response ? error.response.data : error.message)
+    }
+}
+
+export default {
+    fetchUserData,
+    fetchPosts,
+    fetchComments,
+    fetchLikes,
+    fetchRelationships,
+    addPost,
+    updatePost,
+    deletePost,
+    addComment,
+    updateComment,
+    deleteComment,
+    addLike,
+    deleteLike,
+    addRelationship,
+    deleteRelationship,
 }

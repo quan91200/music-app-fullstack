@@ -1,5 +1,5 @@
 import React, { createContext, useReducer, useContext } from "react"
-import * as api from "../api/api"
+import api from "../api/api.js"
 
 // Khởi tạo context
 const UserWorkContext = createContext()
@@ -11,23 +11,50 @@ const actionTypes = {
     SET_COMMENTS: "SET_COMMENTS",
     SET_LIKES: "SET_LIKES",
     SET_RELATIONSHIPS: "SET_RELATIONSHIPS",
+    ADD_ITEM: "ADD_ITEM", // Dùng chung cho các item: post, comment, like, relationship
+    UPDATE_ITEM: "UPDATE_ITEM", // Dùng chung cho các item
+    DELETE_ITEM: "DELETE_ITEM", // Dùng chung cho các item
+    SET_ERROR: "SET_ERROR",
+    SET_LOADING: "SET_LOADING", // Thêm trạng thái loading
 }
 
 // Reducer để cập nhật state
 const userWorkReducer = (state, action) => {
     switch (action.type) {
         case actionTypes.SET_USER:
-            return { ...state, user: action.payload };
+            return { ...state, user: action.payload }
         case actionTypes.SET_POSTS:
-            return { ...state, posts: action.payload };
+            return { ...state, posts: action.payload }
         case actionTypes.SET_COMMENTS:
-            return { ...state, comments: action.payload };
+            return { ...state, comments: action.payload }
         case actionTypes.SET_LIKES:
-            return { ...state, likes: action.payload };
+            return { ...state, likes: action.payload }
         case actionTypes.SET_RELATIONSHIPS:
-            return { ...state, relationships: action.payload };
+            return { ...state, relationships: action.payload }
+        case actionTypes.ADD_ITEM:
+            return {
+                ...state,
+                [action.payload.type]: [...state[action.payload.type], action.payload.data]
+            }
+        case actionTypes.UPDATE_ITEM:
+            return {
+                ...state,
+                [action.payload.type]: state[action.payload.type].map(item =>
+                    item.id === action.payload.data.id ? action.payload.data : item
+                ),
+            }
+        case actionTypes.DELETE_ITEM:
+            return {
+                ...state,
+                [action.payload.type]: state[action.payload.type]
+                    .filter(item => item.id !== action.payload.id),
+            }
+        case actionTypes.SET_ERROR:
+            return { ...state, error: action.payload }
+        case actionTypes.SET_LOADING:
+            return { ...state, isLoading: action.payload }
         default:
-            return state;
+            return state
     }
 }
 
@@ -39,57 +66,42 @@ export const UserWorkProvider = ({ children }) => {
         comments: [],
         likes: [],
         relationships: [],
+        isLoading: false,
+        error: null,
     })
 
-    // Hàm để lấy dữ liệu người dùng và cập nhật state
-    const fetchUserData = async (userId) => {
+    // Hàm để gọi API và dispatch action
+    const fetchData = async (actionType, apiCall, payload = {}) => {
         try {
-            const data = await api.fetchUserData(userId);
-            dispatch({ type: actionTypes.SET_USER, payload: data })
+            dispatch({ type: actionTypes.SET_LOADING, payload: true })
+            const data = await apiCall(payload)
+            dispatch({ type: actionType, payload: data })
         } catch (error) {
-            console.error("Error fetching user data:", error)
+            dispatch({ type: actionTypes.SET_ERROR, payload: error.message })
+        } finally {
+            dispatch({ type: actionTypes.SET_LOADING, payload: false })
         }
-    }
+    };
 
-    // Hàm để lấy danh sách bài viết
-    const fetchPosts = async () => {
-        try {
-            const data = await api.fetchPosts();
-            dispatch({ type: actionTypes.SET_POSTS, payload: data })
-        } catch (error) {
-            console.error("Error fetching posts:", error)
-        }
-    }
+    // Gọi API và dispatch action cho các dữ liệu
+    const fetchUserData = (userId) =>
+        fetchData(actionTypes.SET_USER, api.fetchUserData, userId)
+    const fetchPosts = () =>
+        fetchData(actionTypes.SET_POSTS, api.fetchPosts)
+    const fetchComments = (postId) =>
+        fetchData(actionTypes.SET_COMMENTS, api.fetchComments, postId)
+    const fetchLikes = (postId) =>
+        fetchData(actionTypes.SET_LIKES, api.fetchLikes, postId)
+    const fetchRelationships = (userId) =>
+        fetchData(actionTypes.SET_RELATIONSHIPS, api.fetchRelationships, userId)
 
-    // Hàm để lấy danh sách bình luận
-    const fetchComments = async (postId) => {
-        try {
-            const data = await api.fetchComments(postId)
-            dispatch({ type: actionTypes.SET_COMMENTS, payload: data })
-        } catch (error) {
-            console.error("Error fetching comments:", error)
-        }
-    }
-
-    // Hàm để lấy danh sách lượt thích
-    const fetchLikes = async (postId) => {
-        try {
-            const data = await api.fetchLikes(postId);
-            dispatch({ type: actionTypes.SET_LIKES, payload: data })
-        } catch (error) {
-            console.error("Error fetching likes:", error)
-        }
-    }
-
-    // Hàm để lấy mối quan hệ
-    const fetchRelationships = async (userId) => {
-        try {
-            const data = await api.fetchRelationships(userId)
-            dispatch({ type: actionTypes.SET_RELATIONSHIPS, payload: data })
-        } catch (error) {
-            console.error("Error fetching relationships:", error)
-        }
-    }
+    // Hàm thêm, cập nhật, xóa chung cho các item
+    const addItem = (type, newItem) =>
+        fetchData(actionTypes.ADD_ITEM, api[`add${type}`], newItem)
+    const updateItem = (type, updatedItem) =>
+        fetchData(actionTypes.UPDATE_ITEM, api[`update${type}`], updatedItem)
+    const deleteItem = (type, itemId) =>
+        fetchData(actionTypes.DELETE_ITEM, api[`delete${type}`], itemId)
 
     return (
         <UserWorkContext.Provider
@@ -100,6 +112,9 @@ export const UserWorkProvider = ({ children }) => {
                 fetchComments,
                 fetchLikes,
                 fetchRelationships,
+                addItem,
+                updateItem,
+                deleteItem,
             }}
         >
             {children}
@@ -107,7 +122,6 @@ export const UserWorkProvider = ({ children }) => {
     )
 }
 
-// Custom hook để sử dụng context dễ dàng
 export const useUserWork = () => {
     return useContext(UserWorkContext)
 }

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { AuthProvider } from './context/AuthContext'
+import { privateRoutes, publicRoutes } from "./routes/routes"
+import LayoutWrapper from "./layouts/LayoutWrapper"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AuthProvider>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+        <Routes>
+          {publicRoutes.map(({ path, element, layout }, index) => (
+            <Route
+              key={index}
+              path={path}
+              element={<LayoutWrapper element={element} layout={layout} />}
+            />
+          ))}
+          {privateRoutes.map(({ path, element, layout }, index) => (
+            <Route
+              key={index}
+              path={path}
+              element={<LayoutWrapper element={element} layout={layout} />}
+            />
+          ))}
+        </Routes>
+      </Router>
+    </AuthProvider>
+  )
 }
 
-export default App;
+export default App
