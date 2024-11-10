@@ -15,7 +15,7 @@ const actionTypes = {
     UPDATE_ITEM: "UPDATE_ITEM", // Dùng chung cho các item
     DELETE_ITEM: "DELETE_ITEM", // Dùng chung cho các item
     SET_ERROR: "SET_ERROR",
-    SET_LOADING: "SET_LOADING", // Thêm trạng thái loading
+    SET_LOADING: "SET_LOADING",
 }
 
 // Reducer để cập nhật state

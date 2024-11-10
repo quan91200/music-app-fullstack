@@ -17,15 +17,13 @@ const PlainLink = ({ to, children }) => {
         </NavLink>
     )
 }
-
 export default CustomLink
 export { PlainLink }
 
 const StyledNavLink = styled(NavLink)`
     position: relative;
     padding: 0.5rem 0;
-    text-decoration: none;
-    display: inline-block; /* Đảm bảo rằng phần tử có thể có chiều rộng tự động */
+    display: inline-block;
     transition: color 0.3s ease;
 
     // Tạo pseudo-element cho đường viền dưới
@@ -34,11 +32,11 @@ const StyledNavLink = styled(NavLink)`
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 100%; /* Đảm bảo đường viền có chiều rộng bằng phần tử */
-        height: 3px; /* Độ dày của đường viền */
+        width: 100%;
+        height: 3px;
         background-color: black;
-        transform: scaleX(0); /* Đảm bảo bắt đầu thu lại */
-        transform-origin: bottom left; /* Đặt điểm gốc tại bên phải */
+        transform: scaleX(0);
+        transform-origin: bottom left; /* Đặt điểm gốc tại bên trái */
         transition: transform 0.3s ease;
     }
 
