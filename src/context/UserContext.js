@@ -11,9 +11,9 @@ const actionTypes = {
     SET_COMMENTS: "SET_COMMENTS",
     SET_LIKES: "SET_LIKES",
     SET_RELATIONSHIPS: "SET_RELATIONSHIPS",
-    ADD_ITEM: "ADD_ITEM", // Dùng chung cho các item: post, comment, like, relationship
-    UPDATE_ITEM: "UPDATE_ITEM", // Dùng chung cho các item
-    DELETE_ITEM: "DELETE_ITEM", // Dùng chung cho các item
+    ADD_ITEM: "ADD_ITEM", // item: post, comment, like, relationship
+    UPDATE_ITEM: "UPDATE_ITEM",
+    DELETE_ITEM: "DELETE_ITEM",
     SET_ERROR: "SET_ERROR",
     SET_LOADING: "SET_LOADING",
 }

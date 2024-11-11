@@ -7,21 +7,22 @@ export const DarkModeContext = createContext()
 export const DarkModeProvider = ({ children }) => {
     const [isDarkMode, setIsDarkMode] = useState(false)
 
-    // Kiểm tra trạng thái dark mode trong localStorage khi component mount
     useEffect(() => {
-        const savedMode = localStorage.getItem('darkMode')
-        if (savedMode !== null) {
-            setIsDarkMode(savedMode === 'true')
-        }
-    }, []);
+        const savedMode = localStorage.getItem('darkMode') === 'true'
+        setIsDarkMode(savedMode)
+    }, [])
 
-    // Lưu trạng thái dark mode vào localStorage mỗi khi thay đổi
     useEffect(() => {
         localStorage.setItem('darkMode', isDarkMode)
+        if (isDarkMode) {
+            document.body.classList.add('dark')
+        } else {
+            document.body.classList.remove('dark')
+        }
     }, [isDarkMode])
 
     const toggleDarkMode = () => {
-        setIsDarkMode((prevMode) => !prevMode)
+        setIsDarkMode(prevMode => !prevMode)
     }
 
     return (

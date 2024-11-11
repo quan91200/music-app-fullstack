@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const LayoutWrapper = ({ element, layout: Layout }) => {
-    return Layout ? <Layout>{element}</Layout> : element
-}
+const LayoutWrapper = ({ layout: Layout, element }) => {
+    return <Layout>{element}</Layout>;
+};
 
-export default LayoutWrapper
+export default LayoutWrapper;

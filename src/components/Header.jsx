@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import CustomLink from './CustomLink'
 import { PlainLink } from './CustomLink'
 import { DarkModeContext } from '../context/DarkModeContext'
+import ThemeToggle from './ThemeToggle'
 
 const Header = () => {
   const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext)
@@ -12,19 +13,20 @@ const Header = () => {
       <Logo>
         <PlainLink to="/">Soundify</PlainLink>
       </Logo>
-      <div className='flex items-center gap-6'>
-        <CustomLink to="/">Home</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
-        <CustomLink to="/contact">Contact</CustomLink>
+      <div className="flex items-center gap-6">
+        <CustomLink to="/" isDarkMode={isDarkMode}>Home</CustomLink>
+        <CustomLink to="/about" isDarkMode={isDarkMode}>About</CustomLink>
+        <CustomLink to="/contact" isDarkMode={isDarkMode}>Contact</CustomLink>
       </div>
-      <div>
-        <>setting</>
+      <div className="flex items-center gap-4">
+        <ThemeToggle
+          onClick={() => toggleDarkMode()}
+          isDarkMode={isDarkMode}
+        />
+        <>Settings</>
         <>Profile</>
-        <>notification</>
+        <>Notifications</>
       </div>
-      <ToggleButton onClick={toggleDarkMode}>
-        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-      </ToggleButton>
     </Wrapper>
   )
 }
@@ -35,36 +37,12 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 0;
+  padding: .2rem 3rem;
   width: 100%;
-  z-index: 10;
-  transition: background-color 0.3s ease, padding 0.3s ease;
-
-  &.dark {
-    background-color: ${({ theme }) => theme.headerBackground};
-    color: ${({ theme }) => theme.headerText};
-  }
 `
 
 const Logo = styled.div`
   font-family: 'Press Start 2P', system-ui;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
-`
-
-const ToggleButton = styled.button`
-  background-color: ${({ theme }) => theme.background};
-  color: ${({ theme }) => theme.text};
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.headerBackground};
-  }
 `

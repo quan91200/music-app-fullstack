@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const CustomLink = ({ to, children }) => {
+const CustomLink = ({ to, children, isDarkMode }) => {
     return (
-        <StyledNavLink to={to}>
+        <StyledNavLink to={to} isDarkMode={isDarkMode}>
             {children}
         </StyledNavLink>
     )
@@ -25,6 +25,7 @@ const StyledNavLink = styled(NavLink)`
     padding: 0.5rem 0;
     display: inline-block;
     transition: color 0.3s ease;
+    font-weight: bold;
 
     // Tạo pseudo-element cho đường viền dưới
     &::after {
@@ -34,7 +35,7 @@ const StyledNavLink = styled(NavLink)`
         left: 0;
         width: 100%;
         height: 3px;
-        background-color: black;
+        background: ${({ isDarkMode }) => (isDarkMode ? 'white' : 'black')};
         transform: scaleX(0);
         transform-origin: bottom left; /* Đặt điểm gốc tại bên trái */
         transition: transform 0.3s ease;
