@@ -1,7 +1,13 @@
-import React from 'react';
+import React from 'react'
+import DefaultLayout from './DefaultLayout'
 
-const LayoutWrapper = ({ layout: Layout, element }) => {
-    return <Layout>{element}</Layout>;
-};
+const LayoutWrapper = ({ element, layout }) => {
+    // Kiểm tra layout để áp dụng
+    if (layout === 'default') {
+        return <DefaultLayout>{element}</DefaultLayout>
+    }
 
-export default LayoutWrapper;
+    return element  // Nếu không có layout, trả về element bình thường
+}
+
+export default LayoutWrapper

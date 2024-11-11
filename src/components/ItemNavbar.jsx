@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const ItemNavbar = ({ onItemClick }) => {
+const ItemNavbar = () => {
+    const [selectedItem, setSelectedItem] = useState('all')
     return (
         <div>
-            <ul>
-                <li onClick={onItemClick}>All</li>
-                <li onClick={onItemClick}>Playlists</li>
-                <li onClick={onItemClick}>Artists</li>
-                <li onClick={onItemClick}>Albums</li>
+            <ul className='flex items-center gap-2'>
+                <li onClick={() => setSelectedItem('all')}>All</li>
+                <li onClick={() => setSelectedItem('playlists')}>Playlists</li>
+                <li onClick={() => setSelectedItem('artists')}>Artists</li>
+                <li onClick={() => setSelectedItem('albums')}>Albums</li>
             </ul>
         </div>
     )

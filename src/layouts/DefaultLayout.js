@@ -1,23 +1,29 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import styled from 'styled-components';
-import ResizablePanel from '../components/ResizeablePanel'
-
+import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import styled from 'styled-components'
+import ResizeLayout from '../components/ResizeLayout'
+import { PanelResizeProvider } from '../context/PanelResizeContext'
+import Navbar from '../components/Navbar'
+import MenuItem from '../components/MenuItem'
 
 const DefaultLayout = ({ children }) => {
     return (
         <Page>
             <Header />
             <Content>
-                <ResizablePanel>
-                    {children}
-                </ResizablePanel>
+                <PanelResizeProvider>
+                    <ResizeLayout>
+                        <Navbar />
+                        {children}
+                        <MenuItem />
+                    </ResizeLayout>
+                </PanelResizeProvider>
             </Content>
             <Footer />
         </Page>
-    );
-};
+    )
+}
 
 export default DefaultLayout;
 
@@ -31,9 +37,10 @@ const Page = styled.div`
     "footer"
     ;
     grid-gap: 0.4rem;
-`;
+`
 
 const Content = styled.div`
+    grid-area: content;
     overflow-y: hidden;
     max-height: calc(100vh - 8rem);
-`;
+`
