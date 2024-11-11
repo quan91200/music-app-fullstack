@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
 
-const ResizablePanel = ({ isDarkMode, children }) => {
+const ResizablePanel = ({ children }) => {
     const [width, setWidth] = useState(300); // Kích thước ban đầu của panel trái
     const [isResizing, setIsResizing] = useState(false);
     const [startX, setStartX] = useState(0);  // Lưu vị trí chuột khi bắt đầu kéo
     const [isHovered, setIsHovered] = useState(false);
 
     const minWidth = 300;  // Tương đương 30% chiều rộng màn hình
-    const maxWidth = window.innerWidth * 0.7; // Tương đương 70% chiều rộng màn hình
+    const maxWidth = window.innerWidth * 0.5; // Tương đương 50% chiều rộng màn hình
 
     const handleMouseDown = (e) => {
         setIsResizing(true);
@@ -57,7 +57,6 @@ const ResizablePanel = ({ isDarkMode, children }) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 isHovered={isHovered}
-                isDarkMode={isDarkMode}
             />
             <RightPanel>
                 {children}

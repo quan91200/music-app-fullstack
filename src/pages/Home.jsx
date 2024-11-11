@@ -1,34 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import ResizablePanel from '../components/ResizeablePanel';
 
 const Home = () => {
+    const [isPanelVisible, setIsPanelVisible] = useState(false);
+
+    const handleItemClick = () => {
+        setIsPanelVisible(true);
+    };
+
     return (
-        <Wrapper>
-            Home
-        </Wrapper>
+        <HomeWrapper>
+            <MainContent panelVisible={isPanelVisible}>
+                <h1>Main Content</h1>
+                <button onClick={handleItemClick}>Show Panel</button>
+            </MainContent>
+            {isPanelVisible && (
+                <ResizablePanel resizeDirection="left" minWidth={150} maxWidth={window.innerWidth * 0.3} initialWidth={300}>
+                    <h2>Secondary Panel</h2>
+                    <p>Content of the secondary panel...</p>
+                </ResizablePanel>
+            )}
+        </HomeWrapper>
     );
-}
+};
 
 export default Home;
 
-const Wrapper = styled.div`
-    height: 100%;
-    
-    /* Tùy chỉnh scrollbar */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
+const HomeWrapper = styled.div`
+    display: flex;
+    width: 100%;
+    height: 100vh;
+`;
 
-    ::-webkit-scrollbar-track {
-        background-color: ${({ theme }) => theme.scrollTrack};
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: ${({ theme }) => theme.scrollThumb};
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: ${({ theme }) => theme.scrollThumbHover};
-    }
+const MainContent = styled.div`
+    flex: ${({ panelVisible }) => (panelVisible ? '70%' : '100%')};
+    padding: 16px;
+    overflow: auto;
+    transition: flex 0.3s ease;
 `;

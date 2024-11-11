@@ -1,22 +1,14 @@
 import React from 'react'
-import ItemAlbums from './ItemAlbums'
-import ItemArtists from './ItemArtists'
-import ItemPlaylists from './ItemPlaylists'
 
-const ItemNavbar = ({ selectedItem }) => {
-
+const ItemNavbar = ({ onItemClick }) => {
     return (
         <div>
-            {selectedItem === 'all' && (
-                <>
-                    <ItemPlaylists />
-                    <ItemArtists />
-                    <ItemAlbums />
-                </>
-            )}
-            {selectedItem === 'playlists' && <ItemPlaylists />}
-            {selectedItem === 'artists' && <ItemArtists />}
-            {selectedItem === 'album' && <ItemAlbums />}
+            <ul>
+                <li onClick={onItemClick}>All</li>
+                <li onClick={onItemClick}>Playlists</li>
+                <li onClick={onItemClick}>Artists</li>
+                <li onClick={onItemClick}>Albums</li>
+            </ul>
         </div>
     )
 }
