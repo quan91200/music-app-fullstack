@@ -10,7 +10,7 @@ class BaseDTO {
   /**
    * Abstract method to handle single model transformation.
    */
-  static fromModel(model) {
+  static fromModel(_model) {
     throw new Error('Method fromModel() must be implemented');
   }
 

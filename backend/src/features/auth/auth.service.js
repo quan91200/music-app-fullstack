@@ -112,7 +112,7 @@ class AuthService extends BaseService {
       if (user.avatarUrl) {
         try {
           await SupabaseStorage.delete(user.avatarUrl, bucket);
-        } catch (delError) {
+        } catch (_delError) {
           // Log but continue
         }
       }

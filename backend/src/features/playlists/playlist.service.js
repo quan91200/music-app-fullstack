@@ -85,7 +85,7 @@ class PlaylistService extends BaseService {
       if (playlist.coverUrl) {
         try {
           await SupabaseStorage.delete(playlist.coverUrl, bucket);
-        } catch (error) {
+        } catch (_error) {
           // ignore
         }
       }
@@ -122,7 +122,7 @@ class PlaylistService extends BaseService {
     if (playlist.coverUrl) {
       try {
         await SupabaseStorage.delete(playlist.coverUrl, process.env.SUPABASE_BUCKET_ARTWORK);
-      } catch (error) {
+      } catch (_error) {
         // continue
       }
     }

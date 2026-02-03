@@ -15,7 +15,7 @@ class IPaymentProvider {
    * @param {Object} metadata - Additional info.
    * @returns {Promise<Object>} Provider-specific order details.
    */
-  async createOrder(amount, currency, metadata) {
+  async createOrder(_amount, _currency, _metadata) {
     throw new Error('Method not implemented');
   }
 
@@ -24,7 +24,7 @@ class IPaymentProvider {
    * @param {string} orderId - Provider's order ID.
    * @returns {Promise<Object>} Normalized transaction details.
    */
-  async captureOrder(orderId) {
+  async captureOrder(_orderId) {
     throw new Error('Method not implemented');
   }
 
@@ -33,7 +33,7 @@ class IPaymentProvider {
    * @param {string} transactionId - Provider's transaction ID.
    * @returns {Promise<Object>} Refund details.
    */
-  async refundOrder(transactionId) {
+  async refundOrder(_transactionId) {
     throw new Error('Method not implemented');
   }
 
@@ -43,7 +43,7 @@ class IPaymentProvider {
    * @param {Object} headers - Webhook headers.
    * @returns {Promise<Object>} Normalized event and status.
    */
-  async verifyWebhook(payload, headers) {
+  async verifyWebhook(_payload, _headers) {
     throw new Error('Method not implemented');
   }
 
@@ -52,7 +52,7 @@ class IPaymentProvider {
    * @param {string} providerStatus - Status from provider.
    * @returns {string} One of: 'created', 'paid', 'failed', 'refunded'.
    */
-  normalizeStatus(providerStatus) {
+  normalizeStatus(_providerStatus) {
     throw new Error('Method not implemented');
   }
 }

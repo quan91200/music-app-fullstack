@@ -111,7 +111,7 @@ class SongService extends BaseService {
       if (song.coverUrl) {
         try {
           await SupabaseStorage.delete(song.coverUrl, bucket);
-        } catch (error) {
+        } catch (_error) {
           // ignore
         }
       }
@@ -148,7 +148,7 @@ class SongService extends BaseService {
     if (song.audioUrl) {
       try {
         await SupabaseStorage.delete(song.audioUrl, process.env.SUPABASE_BUCKET_AUDIO);
-      } catch (error) {
+      } catch (_error) {
         // Log but continue
       }
     }
@@ -157,7 +157,7 @@ class SongService extends BaseService {
     if (song.coverUrl) {
       try {
         await SupabaseStorage.delete(song.coverUrl, process.env.SUPABASE_BUCKET_ARTWORK);
-      } catch (error) {
+      } catch (_error) {
         // Log but continue
       }
     }

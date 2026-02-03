@@ -16,7 +16,7 @@ export const setupErrorHandling = (app) => {
   });
 
   // Global Error Handler
-  app.use((err, req, res, next) => {
+  app.use((err, req, res, _next) => {
     let statusCode = err.statusCode || HTTP_STATUS.INTERNAL_SERVER_ERROR;
     let message = err.message || 'Internal Server Error';
     let status = err.status || 'error';

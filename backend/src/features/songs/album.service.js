@@ -65,7 +65,7 @@ class AlbumService extends BaseService {
     if (album.coverUrl) {
       try {
         await SupabaseStorage.delete(album.coverUrl, process.env.SUPABASE_BUCKET_ARTWORK);
-      } catch (error) {
+      } catch (_error) {
         // continue
       }
     }
@@ -97,7 +97,7 @@ class AlbumService extends BaseService {
       if (album.coverUrl) {
         try {
           await SupabaseStorage.delete(album.coverUrl, bucket);
-        } catch (delError) {
+        } catch (_delError) {
           // ignore
         }
       }

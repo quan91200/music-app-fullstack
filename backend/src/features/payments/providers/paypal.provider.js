@@ -18,7 +18,11 @@ class PaypalProvider extends IPaymentProvider {
     this.client = new paypal.core.PayPalHttpClient(environment);
   }
 
-  async createOrder(amount, currency = 'USD', metadata = {}) {
+  async createOrder(
+    amount,
+    currency = 'USD',
+    metadata = {}
+  ) {
     const request = new paypal.orders.OrdersCreateRequest();
     request.prefer("return=representation");
     request.requestBody({
@@ -88,7 +92,6 @@ class PaypalProvider extends IPaymentProvider {
       'VOIDED': 'failed',
       'COMPLETED': 'paid',
       'PAYER_ACTION_REQUIRED': 'created',
-      'COMPLETED': 'paid',
       'REFUNDED': 'refunded',
       'PARTIALLY_REFUNDED': 'refunded',
       'PENDING': 'created',
@@ -98,7 +101,7 @@ class PaypalProvider extends IPaymentProvider {
     return map[providerStatus] || 'created';
   }
 
-  async verifyWebhook(payload, headers) {
+  async verifyWebhook(payload, _headers) {
     // Note: Verification usually requires another PayPal SDK call or manual signature check
     // For now, we normalize the status from the payload
     const eventType = payload.event_type;

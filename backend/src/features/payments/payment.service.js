@@ -103,7 +103,7 @@ class PaymentService {
    */
   async handleWebhook(providerName, payload, headers) {
     const provider = providerFactory.get(providerName);
-    const { transactionId, status, event } = await provider.verifyWebhook(payload, headers);
+    const { transactionId, status } = await provider.verifyWebhook(payload, headers);
 
     const idempotencyKey = `${providerName}:${transactionId}`;
 
