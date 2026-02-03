@@ -4,30 +4,6 @@
 
 services:
   # ---------------------------------------------------------------------------
-  # MySQL Database
-  # ---------------------------------------------------------------------------
-  mysql:
-    image: mysql:8.0
-    container_name: music-app-mysql
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-      MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
-    ports:
-      - "3306:3306"
-    volumes:
-      - mysql_data:/var/lib/mysql
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - music-network
-
-  # ---------------------------------------------------------------------------
   # Backend API
   # ---------------------------------------------------------------------------
   backend:
@@ -38,17 +14,11 @@ services:
     restart: unless-stopped
     env_file:
       - ./backend/.env
-    environment:
-      - DB_HOST=mysql
-      - DB_PORT=3306
     ports:
       - "5000:5000"
     volumes:
       - ./backend:/app
       - /app/node_modules
-    depends_on:
-      mysql:
-        condition: service_healthy
     networks:
       - music-network
 
@@ -76,9 +46,6 @@ services:
 # ==============================================================================
 # Volumes & Networks
 # ==============================================================================
-volumes:
-  mysql_data:
-
 networks:
   music-network:
     driver: bridge
