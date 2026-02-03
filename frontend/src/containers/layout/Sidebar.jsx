@@ -19,6 +19,7 @@ import {
   useLocation
 } from 'react-router-dom'
 
+import { useAuthStore } from '@store/authStore'
 import { useUIStore } from '@store/appStore'
 import { usePlaylistStore } from '@store/playlistStore'
 import { useSongStore } from '@store/songStore'
@@ -88,11 +89,15 @@ const Sidebar = () => {
     return localStorage.getItem('library_filter') || 'all'
   })
 
+  const { user } = useAuthStore()
+
   useEffect(() => {
+    if (!user) return
+
     fetchPlaylists()
     fetchMyAlbums()
     fetchFavorites()
-  }, [fetchPlaylists, fetchMyAlbums, fetchFavorites])
+  }, [fetchPlaylists, fetchMyAlbums, fetchFavorites, user])
 
   useEffect(() => {
     localStorage.setItem('library_filter', libraryFilter)

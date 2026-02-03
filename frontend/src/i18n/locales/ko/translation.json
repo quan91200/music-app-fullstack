@@ -106,7 +106,8 @@
       "choosePlan": "플랜 선택"
     }
   },
-  "common": {
+"common": {
+    "appName": "CobhamMusic",
     "loading": "로딩 중...",
     "loading_songs": "곡을 로딩 중...",
     "loading_album": "앨범을 로딩 중...",
@@ -358,7 +359,56 @@
       "chill": "Chill",
       "focus": "Focus",
       "gaming": "Gaming",
-      "anime": "애니메"
+    "anime": "애니메"
+  },
+  "guest": {
+    "hero": {
+      "title": "모든 순간을 위한 음악.",
+      "description": "수백만 곡의 노래와 팟캐스트. 신용카드 필요 없음. 최고의 음질을 오늘부터 시작하세요.",
+      "cta": "무료 CobhamMusic 시작하기"
+    },
+    "nav": {
+      "login": "로그인",
+      "signup": "무료 회원가입"
+    },
+    "features": {
+      "title": "왜 CobhamMusic 인가요?",
+      "subtitle": "음악 애호가를 위한 궁극의 목적지.",
+      "listenEverywhere": {
+        "iconLabel": "어디서나 듣기",
+        "title": "어디서나 듣기",
+        "description": "어떤 기기에서든 좋아하는 곡을 스트리밍. 원활한 크로스 플랫폼 경험."
+      },
+      "highFidelity": {
+        "iconLabel": "하이파이 오디오",
+        "title": "하이파이 오디오",
+        "description": "크리스탈 클리어한 무손실 오디오 품질로 음악을 경험하세요. 아티스트가 의도한 대로 모든 디테일을 들을 수 있습니다."
+      },
+      "adFree": {
+        "iconLabel": "광고 없는 경험",
+        "title": "광고 없는 경험",
+        "description": "방해 없이 음악만. 광고나 방해 없이 순수한 음악에 집중하세요."
+      }
+    },
+    "showcase": {
+      "title": "좋아할 음악을 발견하세요.",
+      "description": "우리의 지능형 추천 시스템이 귀하의 취향을 학습하고 맞춤화된 새로운 아티스트, 앨범, 플레이리스트를 제안합니다.",
+      "bullets": {
+        "personalized": "개인화된 데일리 믹스",
+        "radar": "신곡 레이더",
+        "curated": "큐레이션된 에디터 플레이리스트",
+        "exclusive": "独家艺人内容"
+      },
+      "cta": "발견 시작하기"
+    },
+    "footer": {
+      "tagline": "음악에 대한 열정으로 설계되었습니다.",
+      "about": "소개",
+      "premium": "Premium",
+      "support": "지원",
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관"
     }
   }
+}
 }

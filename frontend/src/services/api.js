@@ -32,10 +32,11 @@ api.interceptors.request.use(async (config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    // If we get a 401, the token is invalid or session expired
+    // If we get a 401, the token is invalid or session expired.
+    // We don't force a reload here anymore to avoid loops; 
+    // instead, let the ProtectedRoute and onAuthStateChange handle it.
     if (error.response?.status === 401) {
-      localStorage.removeItem('auth-storage')
-      window.location.href = '/auth'
+      console.warn('Unauthorized request. Possible expired session.')
     }
     return Promise.reject(error)
   }

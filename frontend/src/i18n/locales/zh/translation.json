@@ -106,7 +106,8 @@
       "choosePlan": "选择方案"
     }
   },
-  "common": {
+"common": {
+    "appName": "CobhamMusic",
     "loading": "加载中...",
     "loading_songs": "正在加载歌曲...",
     "loading_album": "正在加载专辑...",
@@ -358,7 +359,56 @@
       "chill": "Chill",
       "focus": "Focus",
       "gaming": "Gaming",
-      "anime": "动漫"
+    "anime": "动漫"
+  },
+  "guest": {
+    "hero": {
+      "title": "音乐陪伴每一个时刻。",
+      "description": "数百万首歌曲和播客。无需信用卡。今天就开始聆听最高品质的音轨。",
+      "cta": "免费获取 CobhamMusic"
+    },
+    "nav": {
+      "login": "登录",
+      "signup": "免费注册"
+    },
+    "features": {
+      "title": "为什么选择 CobhamMusic？",
+      "subtitle": "音乐爱好者的终极目的地。",
+      "listenEverywhere": {
+        "iconLabel": "随时随地聆听",
+        "title": "随时随地聆听",
+        "description": "在任何设备上、流媒体播放您喜爱的歌曲，体验无缝的跨平台服务。"
+      },
+      "highFidelity": {
+        "iconLabel": "高保真音频",
+        "title": "高保真音频",
+        "description": "体验清晰无损的音频质量。按艺术家原本意图聆听音乐。"
+      },
+      "adFree": {
+        "iconLabel": "无广告体验",
+        "title": "无广告体验",
+        "description": "无中断。只有您和您的音乐。专注于节奏，不被广告打扰。"
+      }
+    },
+    "showcase": {
+      "title": "发现您会喜爱的音乐。",
+      "description": "我们的智能推荐系统了解您的品味，为您量身定制推荐新的艺术家、专辑和播放列表。",
+      "bullets": {
+        "personalized": "个性化每日推荐",
+        "radar": "新歌雷达",
+        "curated": "编辑精选播放列表",
+        "exclusive": "独家艺人内容"
+      },
+      "cta": "开始发现"
+    },
+    "footer": {
+      "tagline": "为音乐而生。",
+      "about": "关于",
+      "premium": "Premium",
+      "support": "支持",
+      "privacy": "隐私",
+      "terms": "条款"
     }
   }
+}
 }

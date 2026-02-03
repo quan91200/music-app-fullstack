@@ -26,6 +26,7 @@ import ManageSessionPage from '@/pages/ManageSessionPage'
 import LanguagePage from '@/pages/LanguagePage'
 import PremiumPage from '@/pages/PremiumPage'
 import SearchPage from '@/pages/SearchPage'
+import GuestPage from '@/pages/GuestPage'
 
 /**
  * App Routes Configuration
@@ -35,6 +36,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/auth" element={<AuthPage />} />
+      <Route path="/welcome" element={<GuestPage />} />
 
       <Route path="/" element={
         <ProtectedRoute>

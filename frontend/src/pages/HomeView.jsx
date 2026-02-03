@@ -16,9 +16,23 @@ import {
 
 const HomeView = () => {
   const { t } = useTranslation()
-  const { songs, allAlbums, fetchSongs, fetchAllAlbums, isLoading: isSongsLoading } = useSongStore()
-  const { playlists, fetchPlaylists, isLoading: isPlaylistsLoading } = usePlaylistStore()
+
+  const {
+    songs,
+    allAlbums,
+    fetchSongs,
+    fetchAllAlbums,
+    isLoading: isSongsLoading
+  } = useSongStore()
+
+  const {
+    playlists,
+    fetchPlaylists,
+    isLoading: isPlaylistsLoading
+  } = usePlaylistStore()
+
   const { user } = useAuthStore()
+
   const navigate = useNavigate()
 
   const isLoading = isSongsLoading || isPlaylistsLoading
@@ -31,10 +45,12 @@ const HomeView = () => {
   }
 
   useEffect(() => {
+    if (!user) return
+
     fetchSongs()
     fetchAllAlbums()
     fetchPlaylists()
-  }, [fetchSongs, fetchAllAlbums, fetchPlaylists])
+  }, [fetchSongs, fetchAllAlbums, fetchPlaylists, user])
 
   // Show skeletons ONLY while loading
   if (isLoading) {

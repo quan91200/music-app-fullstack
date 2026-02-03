@@ -106,7 +106,8 @@
       "choosePlan": "Choisir le Forfait"
     }
   },
-  "common": {
+"common": {
+    "appName": "CobhamMusic",
     "loading": "Chargement...",
     "loading_songs": "Chargement des titres...",
     "loading_album": "Chargement de l'album...",
@@ -358,7 +359,56 @@
       "chill": "Chill",
       "focus": "Focus",
       "gaming": "Gaming",
-      "anime": "Animé"
+    "anime": "Animé"
+  },
+  "guest": {
+    "hero": {
+      "title": "La musique pour chaque moment.",
+      "description": "Des millions de chansons et de podcasts. Aucune carte de crédit requise. Commencez à écouter les pistes de la plus haute qualité dès aujourd'hui.",
+      "cta": "Obtenir CobhamMusic Gratuit"
+    },
+    "nav": {
+      "login": "Connexion",
+      "signup": "S'inscrire gratuitement"
+    },
+    "features": {
+      "title": "Pourquoi CobhamMusic ?",
+      "subtitle": "La destination ultime pour les amateurs de musique.",
+      "listenEverywhere": {
+        "iconLabel": "Écoutez partout",
+        "title": "Écoutez partout",
+        "description": "Diffusez vos titres préférés sur n'importe quel appareil, n'importe où dans le monde. Expérience multiplateforme transparente."
+      },
+      "highFidelity": {
+        "iconLabel": "Audio Haute Fidélité",
+        "title": "Audio Haute Fidélité",
+        "description": "Expérimentez un son cristallin avec une qualité audio sans perte. Écoutez la musique comme les artistes l'ont conçue."
+      },
+      "adFree": {
+        "iconLabel": "Expérience sans publicité",
+        "title": "Expérience sans publicité",
+        "description": "Zéro interruption. Juste vous et votre musique. Concentrez-vous sur le rythme sans distractions ennuyeuses."
+      }
+    },
+    "showcase": {
+      "title": "Découvrez la musique que vous aimerez.",
+      "description": "Notre système de recommandation intelligent apprend vos goûts et vous suggère de nouveaux artistes, albums et playlists adaptés spécialement pour vous.",
+      "bullets": {
+        "personalized": "Mix quotidiens personnalisés",
+        "radar": "Radar des nouvelles sorties",
+        "curated": "Playlists éditoriales organisées",
+        "exclusive": "Contenu exclusif des artistes"
+      },
+      "cta": "Commencer à découvrir"
+    },
+    "footer": {
+      "tagline": "Conçu avec passion pour la musique.",
+      "about": "À propos",
+      "premium": "Premium",
+      "support": "Support",
+      "privacy": "Confidentialité",
+      "terms": "Conditions"
     }
   }
+}
 }

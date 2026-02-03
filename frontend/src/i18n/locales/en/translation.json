@@ -1,5 +1,6 @@
 {
-  "common": {
+"common": {
+    "appName": "CobhamMusic",
     "loading": "Loading...",
     "loading_songs": "Loading songs...",
     "loading_album": "Loading album...",
@@ -382,6 +383,56 @@
       "focus": "Focus",
       "gaming": "Gaming",
       "anime": "Anime"
+    }
+  },
+"guest": {
+    "appName": "CobhamMusic",
+    "hero": {
+      "title": "Music for every moment.",
+      "description": "Millions of songs and podcasts. No credit card needed. Start listening to the best quality tracks today.",
+      "cta": "Get CobhamMusic Free"
+    },
+    "nav": {
+      "login": "Log In",
+      "signup": "Sign Up Free"
+    },
+"features": {
+      "title": "Why CobhamMusic?",
+      "subtitle": "The ultimate destination for music lovers.",
+      "listenEverywhere": {
+        "iconLabel": "Listen Everywhere",
+        "title": "Listen Everywhere",
+        "description": "Stream your favorite tracks on any device, anywhere in the world. Seamless cross-platform experience."
+      },
+"highFidelity": {
+        "iconLabel": "High Fidelity Audio",
+        "title": "High Fidelity Audio",
+        "description": "Experience crystal clear sound with lossless audio quality. Hear music as the artists intended."
+      },
+"adFree": {
+        "iconLabel": "Ad-Free Experience",
+        "title": "Ad-Free Experience",
+        "description": "Zero interruptions. Just you and your music. Focus on the rhythm without annoying distractions."
+      }
+    },
+    "showcase": {
+      "title": "Discover music you'll love.",
+      "description": "Our intelligent recommendation system learns your taste and suggests new artists, albums, and playlists tailored specifically for you.",
+      "bullets": {
+        "personalized": "Personalized Daily Mixes",
+        "radar": "New Release Radar",
+        "curated": "Curated Editorial Playlists",
+        "exclusive": "Exclusive Artist Content"
+      },
+      "cta": "Start Discovering"
+    },
+    "footer": {
+      "tagline": "Designed with passion for music.",
+      "about": "About",
+      "premium": "Premium",
+      "support": "Support",
+      "privacy": "Privacy",
+      "terms": "Terms"
     }
   }
 }

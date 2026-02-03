@@ -106,7 +106,8 @@
       "choosePlan": "プランを選択"
     }
   },
-  "common": {
+"common": {
+    "appName": "CobhamMusic",
     "loading": "読み込み中...",
     "loading_songs": "曲を読み込み中...",
     "loading_album": "アルバムを読み込み中...",
@@ -358,7 +359,56 @@
       "chill": "Chill",
       "focus": "Focus",
       "gaming": "Gaming",
-      "anime": "アニメ"
+    "anime": "アニメ"
+  },
+  "guest": {
+    "hero": {
+      "title": "音楽があらゆる瞬間を彩ります。",
+      "description": "数百万曲の楽曲とポッドキャスト。クレジットカード不要。今日から最高品質のトラックを聴き始めましょう。",
+      "cta": "無料で CobhamMusic を始める"
+    },
+    "nav": {
+      "login": "ログイン",
+      "signup": "無料でサインアップ"
+    },
+    "features": {
+      "title": "なぜ CobhamMusic ですか？",
+      "subtitle": "音楽愛好家のための究極のデスティネーション。",
+      "listenEverywhere": {
+        "iconLabel": "どこでも聴く",
+        "title": "どこでも聴く",
+        "description": "あらゆるデバイスで好きな曲をストリーミング。シームレスなクロスプラットフォーム体験。"
+      },
+      "highFidelity": {
+        "iconLabel": "ハイファイオーディオ",
+        "title": "ハイファイオーディオ",
+        "description": "ロスレスオーディオ品質でクリアな音質を体験。アーティストの意図通りに音楽を楽しめます。"
+      },
+      "adFree": {
+        "iconLabel": "広告なし体験",
+        "title": "広告なし体験",
+        "description": "途切れのない音楽だけ。広告や中断なしに、リズムに集中できます。"
+      }
+    },
+    "showcase": {
+      "title": "雰囲音楽をを発見しましょう。",
+      "description": "私たちのインテリジェントなレコメンデーションシステムがあなたの好みを学び、あなた用にカスタマイズされた新しいアーティスト、アルバム、プレイリストを提案します。",
+      "bullets": {
+        "personalized": "パーソナライズされたデイリーミックス",
+        "radar": "新曲レーダー",
+        "curated": "キュレートされたエディトリアルプレイリスト",
+        "exclusive": "独占アーティストコンテンツ"
+      },
+      "cta": "発見を開始"
+    },
+    "footer": {
+      "tagline": "音楽への情熱を持ってデザインされました。",
+      "about": "概要",
+      "premium": "Premium",
+      "support": "サポート",
+      "privacy": "プライバシー",
+      "terms": "利用規約"
     }
   }
+}
 }

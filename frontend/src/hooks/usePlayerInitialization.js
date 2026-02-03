@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useAuthStore } from '@store/authStore'
 import { usePlayerStore } from '@store/playerStore'
 import { playerService } from '@services/player'
 import api from '@services/api'
@@ -7,11 +8,12 @@ import api from '@services/api'
  * Hook to initialize player state from localStorage on app load
  */
 export const usePlayerInitialization = () => {
+  const { user } = useAuthStore()
   const persistedSongId = usePlayerStore(state => state.persistedSongId)
 
   useEffect(() => {
     const initializePlayer = async () => {
-      if (!persistedSongId) return
+      if (!persistedSongId || !user) return
 
       try {
         // Fetch song details by ID
@@ -35,5 +37,5 @@ export const usePlayerInitialization = () => {
     }
 
     initializePlayer()
-  }, [persistedSongId])
+  }, [persistedSongId, user])
 }

@@ -21,13 +21,23 @@ const AuthPage = () => {
   const { user } = useAuthStore()
   const navigate = useNavigate()
   const [view, setView] = useState(() => {
-    // Check if we are in a password recovery flow
     const hash = window.location.hash
-    if (hash && hash.includes('type=recovery')) {
-      return 'update_password'
-    }
+    if (hash && hash.includes('type=recovery')) return 'update_password'
+    if (hash === '#signup') return 'sign_up'
+    if (hash === '#login') return 'sign_in'
     return 'sign_in'
   })
+
+  // Listen for hash changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash
+      if (hash === '#signup') setView('sign_up')
+      if (hash === '#login') setView('sign_in')
+    }
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
 
   useEffect(() => {
     // Listen for auth state changes specifically for password recovery

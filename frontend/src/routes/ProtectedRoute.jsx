@@ -17,7 +17,7 @@ export const ProtectedRoute = ({ children }) => {
   }
 
   if (!user) {
-    return <Navigate to="/auth" replace />
+    return <Navigate to="/welcome" replace />
   }
 
   // If used as a wrapper for Routes

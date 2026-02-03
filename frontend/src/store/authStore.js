@@ -21,7 +21,8 @@ export const useAuthStore = create(
     (set, get) => ({
       user: null,
       session: null,
-      loading: true, // Start as true to avoid "redirect flicker" during boot
+      loading: true,
+      _initialized: false,
 
       setSession: (session) => set({
         session,
@@ -31,42 +32,36 @@ export const useAuthStore = create(
 
       signOut: async () => {
         try {
-          // Clear state immediately to provide instant feedback
+          // Attempt to sign out from Supabase
+          await supabase.auth.signOut()
+
+          // State will be cleared by the onAuthStateChange listener
+          // But we clear it here too for immediate UI update
           set({ user: null, session: null, loading: false })
 
-          // Clear local storage managed by persist middleware
-          localStorage.removeItem('auth-storage')
-
-          // Attempt to sign out from Supabase (don't let it block local cleanup)
-          supabase.auth.signOut().catch(err => console.error('Supabase signout error:', err))
-
-          // Clear PWA caches if available
+          // Clear PWA caches
           if ('caches' in window) {
             try {
               const cacheNames = await caches.keys()
-              await Promise.all(
-                cacheNames.map(name => caches.delete(name))
-              )
-            } catch (cacheErr) {
-              console.error('Cache clear error:', cacheErr)
-            }
+              await Promise.all(cacheNames.map(name => caches.delete(name)))
+            } catch (_err) { /* ignore */ }
           }
         } catch (error) {
           console.error('Sign out error:', error)
-          // Ensure state is cleared even on error
           set({ user: null, session: null })
         }
       },
 
       initialize: async () => {
-        // Background validation - don't block UI if we have data
-        const { data: { session } } = await supabase.auth.getSession()
+        if (get()._initialized) return
+        set({ _initialized: true })
 
+        // 1. Initial manual check
+        const { data: { session } } = await supabase.auth.getSession()
         let user = session?.user || null
 
         if (session?.user) {
           try {
-            // 1. Sync to ensure user exists (backend won't overwrite profile fields now)
             await syncProfile({
               id: session.user.id,
               email: session.user.email,
@@ -74,48 +69,48 @@ export const useAuthStore = create(
               avatarUrl: session.user.user_metadata?.avatar_url || ''
             })
 
-            // 2. Fetch fresh profile from DB
             const profileRes = await getProfile()
-
             if (profileRes?.success) {
               user = { ...user, ...profileRes.data }
             }
           } catch (error) {
-            console.error('Auth initialization error:', error)
-          }
-        } else {
-          // No session from Supabase, clear state if it was persisted but invalid
-          if (get().session) {
-            set({ user: null, session: null })
+            console.error('Auth sync error:', error)
           }
         }
 
         set({ session, user, loading: false })
 
+        // 2. Continuous listener
         supabase.auth.onAuthStateChange(async (event, session) => {
-          let updatedUser = session?.user || null
-
-          if ((event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED' || event === 'USER_UPDATED' || event === 'INITIAL_SESSION') && session?.user) {
-            try {
-              await syncProfile({
-                id: session.user.id,
-                email: session.user.email,
-                fullName: session.user.user_metadata?.full_name || session.user.user_metadata?.name || '',
-                avatarUrl: session.user.user_metadata?.avatar_url || ''
-              })
-
-              const profileRes = await getProfile()
-              if (profileRes?.success) {
-                updatedUser = { ...updatedUser, ...profileRes.data }
-              }
-            } catch (_err) {
-              //
-            }
-          } else if (event === 'SIGNED_OUT') {
-            set({ user: null, session: null })
+          if (event === 'SIGNED_OUT') {
+            set({ user: null, session: null, loading: false })
+            return
           }
 
-          set({ session, user: updatedUser, loading: false })
+          if (session?.user) {
+            let updatedUser = session.user
+
+            // Only sync/fetch on major changes to avoid loops
+            if (['SIGNED_IN', 'TOKEN_REFRESHED', 'USER_UPDATED'].includes(event)) {
+              try {
+                await syncProfile({
+                  id: session.user.id,
+                  email: session.user.email,
+                  fullName: session.user.user_metadata?.full_name || session.user.user_metadata?.name || '',
+                  avatarUrl: session.user.user_metadata?.avatar_url || ''
+                })
+
+                const profileRes = await getProfile()
+                if (profileRes?.success) {
+                  updatedUser = { ...updatedUser, ...profileRes.data }
+                }
+              } catch (_err) { /* ignore */ }
+            }
+
+            set({ session, user: updatedUser, loading: false })
+          } else {
+            set({ session: null, user: null, loading: false })
+          }
         })
       },
 

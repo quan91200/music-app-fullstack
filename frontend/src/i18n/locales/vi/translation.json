@@ -109,7 +109,8 @@
       "active": "Đang hoạt động"
     }
   },
-  "common": {
+"common": {
+    "appName": "CobhamMusic",
     "loading": "Đang tải...",
     "loading_songs": "Đang tải bài hát...",
     "loading_album": "Đang tải album...",
@@ -422,6 +423,55 @@
       "focus": "Focus",
       "gaming": "Gaming",
       "anime": "Nhạc Anime"
+    }
+  },
+  "guest": {
+    "hero": {
+      "title": "Âm nhạc cho mọi khoảnh khắc.",
+      "description": "Hàng triệu bài hát và podcast. Không cần thẻ tín dụng. Bắt đầu nghe những bản nhạc chất lượng nhất ngay hôm nay.",
+      "cta": "Nhận CobhamMusic Miễn Phí"
+    },
+    "nav": {
+      "login": "Đăng nhập",
+      "signup": "Đăng ký miễn phí"
+    },
+    "features": {
+      "title": "Tại sao chọn CobhamMusic?",
+      "subtitle": "Điểm đến cuối cùng cho những người yêu âm nhạc.",
+"listenEverywhere": {
+        "iconLabel": "Nghe ở mọi nơi",
+        "title": "Nghe ở mọi nơi",
+        "description": "Phát trực tuyến các bài hát yêu thích trên mọi thiết bị, ở bất cứ đâu trên thế giới. Trải nghiệm đa nền tảng liền mạch."
+      },
+"highFidelity": {
+        "iconLabel": "Âm thanh trung thực cao",
+        "title": "Âm thanh trung thực cao",
+        "description": "Trải nghiệm âm thanh trong trẻo với chất lượng âm thanh lossless. Nghe nhạc theo đúng cách mà nghệ sĩ mong muốn."
+      },
+"adFree": {
+        "iconLabel": "Trải nghiệm không quảng cáo",
+        "title": "Trải nghiệm không quảng cáo",
+        "description": "Không gián đoạn. Chỉ có bạn và âm nhạc của bạn. Tập trung vào nhịp điệu mà không bị xao nhãng bởi quảng cáo."
+      }
+    },
+    "showcase": {
+      "title": "Khám phá âm nhạc bạn sẽ yêu thích.",
+      "description": "Hệ thống gợi ý thông minh của chúng tôi tìm hiểu sở thích của bạn và đề xuất các nghệ sĩ, album và danh sách phát mới được thiết kế riêng cho bạn.",
+      "bullets": {
+        "personalized": "Hỗn hợp Daily Mix cá nhân hóa",
+        "radar": "Radar phát hành mới",
+        "curated": "Danh sách phát biên tập được tuyển chọn",
+        "exclusive": "Nội dung nghệ sĩ độc quyền"
+      },
+      "cta": "Bắt đầu khám phá"
+    },
+    "footer": {
+      "tagline": "Được thiết kế với niềm đam mê âm nhạc.",
+      "about": "Giới thiệu",
+      "premium": "Premium",
+      "support": "Hỗ trợ",
+      "privacy": "Quyền riêng tư",
+      "terms": "Điều khoản"
     }
   }
 }
