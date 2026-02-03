@@ -20,17 +20,18 @@ import { useAuthStore } from '@/store/authStore'
 const AuthPage = () => {
   const { user } = useAuthStore()
   const navigate = useNavigate()
-  const [view, setView] = useState('sign_in')
-
-  useEffect(() => {
+  const [view, setView] = useState(() => {
     // Check if we are in a password recovery flow
     const hash = window.location.hash
     if (hash && hash.includes('type=recovery')) {
-      setView('update_password')
+      return 'update_password'
     }
+    return 'sign_in'
+  })
 
+  useEffect(() => {
     // Listen for auth state changes specifically for password recovery
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, _session) => {
       if (event === 'PASSWORD_RECOVERY') {
         setView('update_password')
       }

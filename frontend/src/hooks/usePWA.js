@@ -16,11 +16,11 @@ export const usePWA = () => {
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
   } = useRegisterSW({
-    onRegistered(r) {
-      // console.log('SW Registered: ', r)
+    onRegistered(_r) {
+      //
     },
-    onRegisterError(error) {
-      // console.error('SW registration error', error)
+    onRegisterError(_error) {
+      //
     },
   })
 

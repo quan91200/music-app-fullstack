@@ -82,7 +82,7 @@ class PlayerService {
     const audio = this.audio
 
     audio.addEventListener('timeupdate', () => {
-      const store = usePlayerStore.getState()
+
       const progress = (audio.currentTime / audio.duration) * 100 || 0
 
       // Direct state update without triggering re-renders for every frame

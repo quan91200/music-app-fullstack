@@ -108,7 +108,7 @@ export const useAuthStore = create(
               if (profileRes?.success) {
                 updatedUser = { ...updatedUser, ...profileRes.data }
               }
-            } catch (err) {
+            } catch (_err) {
               //
             }
           } else if (event === 'SIGNED_OUT') {
@@ -120,24 +120,20 @@ export const useAuthStore = create(
       },
 
       updateProfile: async (data) => {
-        try {
-          const response = await updateProfile(data)
-          if (response && response.success) {
-            // Fetch fresh profile to ensure all derived data is correct
-            const profileRes = await getProfile()
-            if (profileRes && profileRes.success) {
-              const updatedUser = {
-                ...get().user,
-                ...profileRes.data
-              }
-              set({ user: updatedUser })
-              return profileRes.data
+        const response = await updateProfile(data)
+        if (response && response.success) {
+          // Fetch fresh profile to ensure all derived data is correct
+          const profileRes = await getProfile()
+          if (profileRes && profileRes.success) {
+            const updatedUser = {
+              ...get().user,
+              ...profileRes.data
             }
-          } else {
-            throw new Error(response?.data?.message || 'Failed to update profile')
+            set({ user: updatedUser })
+            return profileRes.data
           }
-        } catch (error) {
-          throw error
+        } else {
+          throw new Error(response?.data?.message || 'Failed to update profile')
         }
       }
     }),

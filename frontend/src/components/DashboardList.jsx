@@ -1,6 +1,9 @@
 import React from 'react'
 
-import { motion } from 'framer-motion'
+import {
+  // eslint-disable-next-line no-unused-vars
+  motion
+} from 'framer-motion'
 
 import Artwork from '@components/Artwork'
 
@@ -15,7 +18,6 @@ export const DashboardList = ({ children, className = '' }) => {
 export const DashboardListItem = ({
   index,
   coverUrl,
-  coverIcon,
   title,
   subtitle,
   stats,

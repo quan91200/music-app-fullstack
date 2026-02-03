@@ -20,6 +20,7 @@ import {
 
 import {
   AnimatePresence,
+  // eslint-disable-next-line no-unused-vars
   motion
 } from 'framer-motion'
 
@@ -225,7 +226,7 @@ const ArtistDashboard = () => {
       await updateSong(editingSong.id, data)
       toast.success(t('artist_dashboard.messages.changes_saved'), { id: loadingToast })
       closeEditModal()
-    } catch (error) {
+    } catch (_error) {
       toast.error(t('artist_dashboard.messages.save_failed'), { id: loadingToast })
     } finally {
       setIsSaving(false)
@@ -246,7 +247,7 @@ const ArtistDashboard = () => {
       })
       toast.success(t('artist_dashboard.messages.album_created'), { id: loadingToast })
       closeAlbumModal()
-    } catch (error) {
+    } catch (_error) {
       toast.error(t('artist_dashboard.messages.create_album_failed'), { id: loadingToast })
     } finally {
       setIsCreatingAlbum(false)

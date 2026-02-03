@@ -5,8 +5,6 @@ import React, {
 
 import { useTranslation } from 'react-i18next'
 
-import { useNavigate } from 'react-router-dom'
-
 import PaypalButton from '@components/payment/PaypalButton'
 
 import {
@@ -87,7 +85,6 @@ const getTranslatedArray = (obj, t) => {
 
 const PremiumPage = () => {
   const { t, i18n } = useTranslation()
-  const navigate = useNavigate()
   const [expandedFaq, setExpandedFaq] = useState(null)
   const [selectedPlan, setSelectedPlan] = useState('premium')
   const [currentSubscription, setCurrentSubscription] = useState(null)
@@ -129,7 +126,7 @@ const PremiumPage = () => {
     return Icon ? <Icon className={className} size={20} /> : null
   }
 
-  const formatPrice = (price, currency) => {
+  const formatPrice = (price) => {
     const localeMap = {
       vi: 'vi-VN',
       en: 'en-US',

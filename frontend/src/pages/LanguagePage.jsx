@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { useNavigate } from 'react-router-dom'
-
 import { useTranslation } from 'react-i18next'
 
 import { Check } from 'lucide-react'
@@ -15,12 +13,9 @@ import SettingsItem from '@/components/SettingsItem'
  */
 const LanguagePage = () => {
   const { t, i18n } = useTranslation()
-  const navigate = useNavigate()
 
   const handleLanguageChange = (code) => {
     i18n.changeLanguage(code)
-    // Optional: navigate back after selection
-    // navigate('/settings')
   }
 
   return (

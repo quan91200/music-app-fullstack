@@ -50,9 +50,7 @@ const SongListCard = ({
   showAlbum = false,
   showDateAdded = false,
   showDuration = true,
-  className = '',
-  onAddToQueue,
-  currentPlaylistId
+  className = ''
 }) => {
   const { t } = useTranslation()
   const navigate = useNavigate()

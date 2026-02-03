@@ -61,7 +61,7 @@ export const SkeletonText = ({
   }
   return (
     <BaseSkeleton
-      variant='rounded'
+      variant={variant}
       width={width}
       height={height}
       sx={sx}

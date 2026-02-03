@@ -62,7 +62,7 @@ const getInitialState = () => {
  * All mutations should go through playerService.
  * The setState calls here are ONLY used by playerService internally.
  */
-export const usePlayerStore = create((set, get) => {
+export const usePlayerStore = create(() => {
   const initialState = getInitialState()
 
   return {

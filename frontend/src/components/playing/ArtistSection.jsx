@@ -13,10 +13,10 @@ import Artwork from '@components/Artwork'
  * Displays artist banner, name, stats, and bio
  */
 const ArtistSection = ({ artist, className = '' }) => {
-  if (!artist) return null
-
   const { t } = useTranslation()
   const navigate = useNavigate()
+
+  if (!artist) return null
 
   const handleFollow = (e) => {
     e.stopPropagation()

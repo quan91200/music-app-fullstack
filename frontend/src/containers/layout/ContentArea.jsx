@@ -63,7 +63,7 @@ const ContentArea = ({ children }) => {
 
       // Use hard redirect to clear all states and prevent "back" issues
       window.location.href = '/auth'
-    } catch (error) {
+    } catch (_error) {
       toast.error(t('toast.logout_failed', { defaultValue: 'Lỗi khi đăng xuất' }))
     }
   }

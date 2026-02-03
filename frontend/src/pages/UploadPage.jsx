@@ -1,6 +1,10 @@
-import React, { useState, useRef } from 'react'
+import React, {
+  useState
+} from 'react'
 
-import { Music, Send } from 'lucide-react'
+import {
+  Send
+} from 'lucide-react'
 
 import api from '@/services/api'
 

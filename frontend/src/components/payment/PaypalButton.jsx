@@ -25,11 +25,10 @@ const PaypalButton = ({
 
   const [{
     isPending,
-    isResolved,
     isRejected
   }] = usePayPalScriptReducer()
 
-  const handleCreateOrder = async (data, actions) => {
+  const handleCreateOrder = async (_data, _actions) => {
     try {
       if (!plan || !plan.id) {
         throw new Error('Invalid plan selection')
@@ -50,7 +49,7 @@ const PaypalButton = ({
     }
   }
 
-  const handleApprove = async (data, actions) => {
+  const handleApprove = async (data, _actions) => {
     try {
       const response = await captureOrder(data.orderID, plan.id, 'paypal')
       if (response.success) {

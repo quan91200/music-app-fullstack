@@ -89,7 +89,7 @@ const ProfilePage = () => {
       })
       toast.success(t('toast.profile_updated'), { id: loadingToast })
       setIsEditOpen(false)
-    } catch (error) {
+    } catch (_error) {
       toast.error(t('toast.profile_update_failed'), { id: loadingToast })
     } finally {
       setIsUpdating(false)

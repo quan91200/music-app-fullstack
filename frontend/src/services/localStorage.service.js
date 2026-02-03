@@ -14,7 +14,7 @@ export const setItem = (key, value) => {
     const serializedValue = JSON.stringify(value)
     localStorage.setItem(key, serializedValue)
     return true
-  } catch (error) {
+  } catch (_error) {
     return false
   }
 }
@@ -30,7 +30,7 @@ export const getItem = (key, defaultValue = null) => {
     const item = localStorage.getItem(key)
     if (item === null) return defaultValue
     return JSON.parse(item)
-  } catch (error) {
+  } catch (_error) {
     return defaultValue
   }
 }
@@ -44,7 +44,7 @@ export const removeItem = (key) => {
   try {
     localStorage.removeItem(key)
     return true
-  } catch (error) {
+  } catch (_error) {
     return false
   }
 }
@@ -57,7 +57,7 @@ export const clear = () => {
   try {
     localStorage.clear()
     return true
-  } catch (error) {
+  } catch (_error) {
     return false
   }
 }

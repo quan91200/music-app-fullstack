@@ -56,8 +56,7 @@ const Sidebar = () => {
   const {
     playlists,
     fetchPlaylists,
-    createPlaylist,
-    isLoading: isPlaylistLoading
+    createPlaylist
   } = usePlaylistStore()
 
   const {
@@ -153,7 +152,7 @@ const Sidebar = () => {
       }
       toast.success(`${modalType === 'playlist' ? 'Playlist' : 'Album'} created`, { id: loadingToast })
       closeCreateModal()
-    } catch (error) {
+    } catch (_error) {
       toast.error(`Failed to create ${modalType}`, { id: loadingToast })
     } finally {
       setIsSubmitting(false)

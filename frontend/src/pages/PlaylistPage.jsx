@@ -114,7 +114,7 @@ const PlaylistPage = () => {
       setPlaylist(prev => ({ ...prev, ...updated }))
       toast.success(t('toast.playlist_updated'), { id: loadingToast })
       setIsEditOpen(false)
-    } catch (error) {
+    } catch (_error) {
       toast.error(t('toast.playlist_update_failed'), { id: loadingToast })
     } finally {
       setIsUpdating(false)

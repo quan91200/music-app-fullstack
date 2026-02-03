@@ -25,7 +25,7 @@ const getCurrentLocale = () => {
  * @example
  * formatDateDMY(new Date('2024-01-15')) // "15-01-24"
  */
-export const formatDateDMY = (date, locale) => {
+export const formatDateDMY = (date, _locale) => {
   // Note: locale parameter kept for API consistency, but this function
   // always returns dd-mm-yy format regardless of locale
   if (!date) return '';
@@ -48,7 +48,7 @@ export const formatDateDMY = (date, locale) => {
  * @example
  * formatDateMDY(new Date('2024-01-15')) // "01-15-24"
  */
-export const formatDateMDY = (date, locale) => {
+export const formatDateMDY = (date, _locale) => {
   if (!date) return '';
 
   const d = new Date(date);

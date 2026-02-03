@@ -124,7 +124,7 @@ const AlbumPage = () => {
       setAlbum(prev => ({ ...prev, ...updated }))
       toast.success(t('toast.album_updated'), { id: loadingToast })
       setIsEditOpen(false)
-    } catch (error) {
+    } catch (_error) {
       toast.error(t('toast.album_update_failed'), { id: loadingToast })
     } finally {
       setIsUpdating(false)
