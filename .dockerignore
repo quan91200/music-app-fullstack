@@ -1,0 +1,42 @@
+# ==============================================================================
+# DOCKER IGNORE - Root Level
+# ==============================================================================
+
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Git
+.git/
+.gitignore
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files (use .env.docker for Docker)
+.env
+.env.*
+!.env.docker
+
+# Logs
+logs/
+*.log
+
+# Build outputs
+dist/
+build/
+
+# Agent & System
+.agent/
+.devcontainer/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp/
+temp/

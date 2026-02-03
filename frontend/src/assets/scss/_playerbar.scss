@@ -1,0 +1,120 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.mobile-mini-progress {
+  display: none;
+  position: absolute;
+  top: 0; left: 12px; right: 12px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+
+  @include mobile { display: block; }
+  .progress-inner { height: 100%; background: $text-main; transition: width 0.1s linear; }
+}
+
+.pb-song-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 30%;
+  min-width: 180px;
+
+  .artwork-thumb {
+    width: 56px; height: 56px;
+    border-radius: 8px;
+    background: #18181b;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+
+  .text-info {
+    overflow: hidden;
+    .title { font-weight: 600; font-size: 14px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+    .artist { font-size: 12px; color: $text-muted; }
+  }
+}
+
+.pb-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 600px;
+
+  .playback-buttons {
+    display: flex; align-items: center; gap: 24px;
+    
+    // Reuse shared unit-btn inside, no need for duplicated styles here
+    // Specific play button override
+    .play-pause-btn {
+      width: 40px; height: 40px; border-radius: 50%; background: $text-main;
+      display: flex; align-items: center; justify-content: center; cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.1s ease;
+      &:active { transform: scale(0.95); }
+      .icon-play { margin-left: 2px; color: #000; fill: #000; } // Ensure icon is black on white bg
+    }
+  }
+
+  .progress-section {
+    width: 100%; display: flex; align-items: center; gap: 10px;
+    .time { font-size: 11px; color: $text-muted; width: 35px; &.current { text-align: right; } }
+    .slider-wrapper { position: relative; flex: 1; height: 12px; display: flex; align-items: center; }
+  }
+}
+
+.pb-extra {
+  display: flex; align-items: center; gap: 16px; width: 30%; justify-content: flex-end; min-width: 150px;
+  .volume-section {
+    display: flex; align-items: center; gap: 8px;
+    .slider-wrapper { position: relative; width: 100px; height: 12px; display: flex; align-items: center; }
+  }
+  @include mobile { display: none; }
+}
+
+// Mobile Responsive Player Bar
+.player-bar-wrapper {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @include tablet {
+    height: 64px;
+    padding: 0 12px 0 8px !important;
+    background: rgba(18, 18, 18, 0.9) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 8px;
+    margin: 0 8px;
+    bottom: calc($mobile-nav-height + env(safe-area-inset-bottom) + 8px);
+    left: 0; right: 0; width: auto !important; position: fixed !important; z-index: 99;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+    .pb-song-info {
+      width: auto; min-width: 0; flex: 1; gap: 10px;
+      .artwork-thumb { width: 44px; height: 44px; border-radius: 6px; }
+      .text-info { .title { font-size: 13px; font-weight: 600; color: $text-main; } .artist { font-size: 11px; color: rgba(255, 255, 255, 0.6); } }
+    }
+
+    .pb-controls {
+      width: auto; flex: 0;
+      .playback-buttons {
+        gap: 20px;
+        .unit-btn:not(.play-pause-btn) { display: none; }
+        .play-pause-btn { background: transparent; box-shadow: none; svg { fill: $text-main; color: $text-main; } }
+        .skip-forward-mobile { display: block !important; }
+        .repeat-wrapper { display: none; }
+      }
+      .progress-section { display: none; }
+    }
+
+    .pb-extra { display: none; }
+    .mobile-mini-progress { left: 8px; right: 8px; bottom: 0; top: auto; height: 2px; background: rgba(255, 255, 255, 0.1); border-radius: 2px; }
+  }
+}

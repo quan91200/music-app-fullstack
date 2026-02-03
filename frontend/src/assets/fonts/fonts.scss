@@ -1,0 +1,133 @@
+/**
+ * @fileoverview Font configuration and @font-face declarations
+ * @module assets/fonts/fonts.scss
+ */
+
+// SN Pro Font Family
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  src: url('@fonts/SN_Pro/SNPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}

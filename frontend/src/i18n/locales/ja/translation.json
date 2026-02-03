@@ -1,0 +1,364 @@
+{
+  "premium": {
+    "badge": "プレミアム",
+    "hero": {
+      "title": "フルエクスペリエンスを解放",
+      "subtitle": "高音質音楽への無制限アクセス、広告なしの視聴、限定機能を手に入れましょう。今日から何百万人ものプレミアムメンバーに参加してください。"
+    },
+    "benefits": {
+      "title": "プレミアムにする理由",
+      "audioQuality": {
+        "title": "ハイファイ音質",
+        "description": "クリスタルクリアな320kbps品質で音楽を体験。アーティストの意図通り、あらゆるディテールを聴くことができます。"
+      },
+      "adFree": {
+        "title": "広告なしの視聴",
+        "description": "中断されない音楽を楽しむ。広告も中断もなく、純粋な音楽だけ。"
+      },
+      "offline": {
+        "title": "オフラインモード",
+        "description": "お気に入りの曲をダウンロードして、インターネットがなくてもどこでも聴くことができます。"
+      },
+      "unlimitedSkips": {
+        "title": "無制限のスキップ",
+        "description": "好きなだけ曲をスキップ。プレイリストを完全にコントロールできます。"
+      },
+      "streamingQuality": {
+        "title": "データセーバー",
+        "description": "ストリーミング品質を選択。モバイルではデータを節約し、WiFiでは高音質を楽しむ。"
+      },
+      "exclusiveContent": {
+        "title": "限定コンテンツ",
+        "description": "トップアーティストからの限定リリース、早期ドロップ、プレミアム限定コンテンツにアクセス。"
+      }
+    },
+    "comparison": {
+      "title": "無料 vs プレミアム",
+      "free": {
+        "title": "無料",
+        "standard": "標準品質",
+        "withAds": "広告付き",
+        "limited": "制限あり",
+        "shuffle": "シャッフルのみ",
+        "basic": "基本"
+      },
+      "premium": {
+        "title": "プレミアム",
+        "hifi": "ハイファイ品質",
+        "noAds": "広告なし",
+        "unlimited": "無制限",
+        "full": "完全コントロール"
+      },
+      "audio_quality": "オーディオ品質",
+      "ads": "広告なし",
+      "offline": "オフラインモード",
+      "skips": "無制限スキップ",
+      "on_demand": "オンデマンド再生",
+      "social": "ソーシャル機能"
+    },
+    "pricing": {
+      "title": "プランを選択",
+      "subtitle": "あなたのライフスタイルに合わせた柔軟なプラン。いつでもキャンセル可能。"
+    },
+    "plans": {
+      "monthly": {
+        "name": "月額",
+        "period": "月"
+      },
+      "yearly": {
+        "name": "年額",
+        "period": "年",
+        "badge": "ベストバリュー"
+      },
+      "student": {
+        "name": "学生",
+        "period": "月",
+        "badge": "50% OFF",
+        "eligibility": "有効な学生証が必要"
+      },
+      "savings": "{{percent}}割引"
+    },
+    "trust": {
+      "users": "アクティブユーザー",
+      "rating": "ユーザーレビュー",
+      "guarantee": "日間保証"
+    },
+    "faq": {
+      "title": "よくある質問",
+      "cancel": {
+        "question": "いつでもサブスクリプションをキャンセルできますか？",
+        "answer": "はい、プレミアムサブスクリプションはいつでもキャンセルできます。プレミアム機能は請求期間の終了までアクティブなままです。"
+      },
+      "devices": {
+        "question": "何台のデバイスで使用できますか？",
+        "answer": "プレミアムは最大5台のデバイスで同時に使用できます。オフライン視聴用に最大3台のデバイスにコンテンツをダウンロードできます。"
+      },
+      "offline": {
+        "question": "何曲ダウンロードできますか？",
+        "answer": "プレミアムでは最大10,000曲をオフライン視聴用にダウンロードできます。ダウンロードはアクティブなプレミアムサブスクリプションを維持している間利用可能です。"
+      },
+      "family": {
+        "question": "ファミリープランはありますか？",
+        "answer": "はい！ファミリープランでは、最大6人の家族メンバーが1つのサブスクリプションでプレミアム機能を割引価格で利用できます。"
+      }
+    },
+    "cta": {
+      "choosePlan": "プランを選択"
+    }
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "loading_songs": "曲を読み込み中...",
+    "loading_album": "アルバムを読み込み中...",
+    "loading_playlist": "プレイリストを読み込み中...",
+    "loading_profile": "プロフィールを読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功",
+    "logout": "ログアウト",
+    "settings": "設定",
+    "profile": "プロフィール",
+    "dashboard": "ダッシュボード",
+    "upload": "アップロード",
+    "premium": "Premiumにアップグレード",
+    "free": "無料",
+    "user_default": "ユーザー",
+    "cancel": "キャンセル",
+    "create": "作成",
+    "name": "名前",
+    "you": "あなた",
+    "playlist": "プレイリスト",
+    "album": "アルバム",
+    "albums": "アルバム",
+    "song": "曲",
+    "songs": "曲",
+    "songs_count": "{{count}} 曲",
+    "anonymous_artist": "不明なアーティスト",
+    "choose_image": "画像を選択",
+    "see_all": "すべて表示",
+    "recently_liked": "最近お気に入りの曲",
+    "no_liked_songs": "お気に入りの曲はまだありません。",
+    "date_added": "追加日",
+    "remove_image": "画像を削除",
+    "clear_file": "ファイルをクリア",
+    "expand": "展開する",
+    "close": "閉じる",
+    "clear_queue": "キューをクリア",
+    "remove": "削除"
+  },
+  "table_headers": {
+    "index": "#",
+    "title": "タイトル",
+    "album": "アルバム",
+    "date_added": "追加日",
+    "duration": "再生時間"
+  },
+  "toast": {
+    "added_to_favorites": "お気に入りソングに追加しました",
+    "removed_from_favorites": "お気に入りソングから削除しました",
+    "profile_updated": "プロフィールを更新しました",
+    "profile_update_failed": "プロフィールの更新に失敗しました",
+    "album_updated": "アルバムを更新しました",
+    "album_update_failed": "アルバムの更新に失敗しました",
+    "playlist_updated": "プレイリストを更新しました",
+    "playlist_update_failed": "プレイリストの更新に失敗しました",
+    "added_to_queue": "キューに追加しました",
+    "added_to_playlist": "プレイリストに追加しました",
+    "play_next_added": "次に再生されます",
+    "logout_success": "ログアウトしました",
+    "logout_failed": "ログアウトに失敗しました",
+    "payment_success": "お支払い完了！Premiumへようこそ。",
+    "payment_canceled": "お支払いキャンセル",
+    "payment_error": "PayPalでエラーが発生しました。再試行してください。",
+    "payment_create_error": "注文の作成に失敗しました",
+    "paypal_sdk_error": "PayPal SDKの読み込みに失敗しました",
+    "profile_name_required": "氏名を入力してください",
+    "profile_updating": "プロフィールを更新中...",
+    "album_title_required": "タイトルを入力してください",
+    "album_updating": "アルバムを更新中...",
+    "playlist_title_required": "タイトルを入力してください",
+    "playlist_updating": "プレイリストを更新中...",
+    "upload_audio_required": "音声ファイルを選択してください。",
+    "upload_uploading": "作品をアップロード中...",
+    "upload_success": "曲が正常にアップロードされました！",
+    "upload_failed": "アップロードに失敗しました。再試行してください。",
+    "pwa_offline_ready": "オフラインで使用する準備が完了しました！",
+    "pwa_update_available": "新しいバージョンが利用可能です！タップして更新。"
+  },
+  "song_actions": {
+    "play_next": "次に再生"
+  },
+  "favorites": {
+    "add": "お気に入りに追加",
+    "remove": "お気に入りから削除"
+  },
+  "sidebar": {
+    "home": "ホーム",
+    "search": "検索",
+    "library": "マイライブラリ",
+    "create_playlist": "プレイリストを作成",
+    "create_album": "アルバムフォルダを作成",
+    "new_playlist": "新しいプレイリスト",
+    "new_album": "新しいアルバム",
+    "liked_songs": "お気に入りの曲",
+    "albums": "アルバム",
+    "premium": "プレミアム",
+    "profile": "プロフィール",
+    "your_library": "マイライブラリ",
+    "filters": {
+      "all": "すべて",
+      "playlists": "プレイリスト",
+      "albums": "アルバム"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "おはようございます",
+      "afternoon": "こんにちは",
+      "evening": "こんばんは"
+    },
+    "featured_albums": "注目のアルバム",
+    "featured_playlists": "トッププレイリスト",
+    "recently_played": "最近再生した項目",
+    "popular_songs": "人気曲",
+    "empty_library": "ライブラリは空です。",
+    "upload_first": "最初の曲をアップロード"
+  },
+  "playing": {
+    "now_playing": "再生中",
+    "queue": "次に再生",
+    "next_up": "次はこちら",
+    "unknown_artist": "不明なアーティスト",
+    "artist_label": "アーティスト",
+    "queue_empty": "キューは空です",
+    "choose_song": "詳細を表示する曲を選択してください",
+    "about_artist": "アーティストについて",
+    "follow": "フォローする",
+    "followed_artist": "{{name}}をフォローしました",
+    "artist_bio": "{{name}}はCobhamMusicの才能あるクリエイターです。フォローして最新情報を受け取りましょう。",
+    "view_profile": "プロフィールを見る",
+    "like_song": "この曲が好き",
+    "add_to_playlist": "プレイリストに追加",
+    "add_to_queue": "キューに追加",
+    "go_to_radio": "ラジオへ",
+    "view_album": "アルバムを見る",
+    "view_artist": "アーティストを見る"
+  },
+  "settings": {
+    "title": "設定",
+    "account": "アカウント",
+    "edit_profile": "プロフィールを編集",
+    "edit_profile_desc": "表示名とプロフィール画像を変更",
+    "manage_sessions": "セッション管理",
+    "manage_sessions_desc": "ログイン中のデバイスを表示・管理",
+    "audio_quality": "音質",
+    "streaming": "ストリーミング",
+    "streaming_desc": "高音質 (推奨)",
+    "auto": "自動",
+    "normalize_volume": "音量の均一化",
+    "normalize_volume_desc": "すべての曲を同じ音量で再生",
+    "offline_mode": "オフラインモード (PWA)",
+    "offline_mode_label": "オフラインモード",
+    "offline_mode_desc": "ダウンロード済みの曲のみ再生",
+    "display": "表示",
+    "language": "言語",
+    "choose_language": "言語を選択",
+    "dark_mode": "ダークモード",
+    "always_on": "常にオン"
+  },
+  "billing": {
+    "title": "請求とサブスクリプション",
+    "subscription": {
+      "title": "現在のサブスクリプション"
+    }
+  },
+  "auth": {
+    "login": "ログイン",
+    "signup": "新規登録"
+  },
+  "artist_dashboard": {
+    "title": "アーティストダッシュボード",
+    "welcome_back": "おかえりなさい、{{name}}さん。現在の状況です。",
+    "verified": "認証済みアーティスト",
+    "new_album": "新しいアルバム",
+    "new_release": "新しいリリース",
+    "stats": {
+      "total_songs": "総曲数",
+      "total_streams": "総再生回数",
+      "followers": "フォロワー",
+      "trending": "トレンド中",
+      "streams_count": "{{count}} 再生",
+      "songs_count": "{{count}} 曲"
+    },
+    "tabs": {
+      "songs": "曲",
+      "albums": "アルバム",
+      "analytics": "分析",
+      "settings": "設定"
+    },
+    "modals": {
+      "create_album_title": "新しいアルバムを作成",
+      "album_name_label": "アルバム名",
+      "album_name_placeholder": "マイ・オーサム・アルバム",
+      "create_album_btn": "アルバムを作成",
+      "creating": "作成中...",
+      "edit_song_title": "曲を編集",
+      "artwork_label": "アートワーク",
+      "song_title_label": "タイトル",
+      "artist_name_label": "アーティスト名",
+      "genre_label": "ジャンル",
+      "select_genre": "ジャンルを選択",
+      "save_changes": "変更を保存",
+      "saving": "保存中..."
+    },
+    "empty_states": {
+      "no_releases": "リリースはまだありません",
+      "no_releases_desc": "最初のトラックから成功が始まります。",
+      "upload_first": "最初の曲をアップロード",
+      "no_albums": "アルバムが作成されていません",
+      "no_albums_desc": "トラックをアルバムやフォルダに整理しましょう。",
+      "create_first_album": "最初のアルバムを作成",
+      "coming_soon": "インサイトと設定は近日公開予定です。"
+    },
+    "confirm": {
+      "delete_song_title": "リリースを削除しますか？",
+      "delete_song_msg": "この曲をプラットフォームから削除してもよろしいですか？この操作は取り消せません。",
+      "delete_album_title": "アルバムを削除しますか？",
+      "delete_album_msg": "アルバムを削除してもよろしいですか？曲は残りますが、未分類になります。",
+      "deleting_song": "曲を削除中...",
+      "deleting_album": "アルバムを削除中...",
+      "delete_success": "正常に削除されました",
+      "delete_failed": "削除に失敗しました",
+      "confirm_btn": "確認",
+      "processing": "処理中..."
+    },
+    "messages": {
+      "saving_changes": "変更を保存中...",
+      "changes_saved": "変更を保存しました",
+      "save_failed": "曲の更新に失敗しました",
+      "creating_album": "アルバムを作成中...",
+      "album_created": "アルバムを作成しました",
+      "create_album_failed": "アルバムの作成に失敗しました"
+    }
+  },
+  "search": {
+    "placeholder": "何を聴きたいですか？",
+    "no_results": "検索結果が見つかりません。",
+    "browse_all": "すべて閲覧",
+    "categories": {
+      "vpop": "V-Pop",
+      "kpop": "K-Pop",
+      "pop": "Pop",
+      "hiphop": "Hip-Hop",
+      "dance": "Dance/Electronic",
+      "indie": "Indie",
+      "rock": "Rock",
+      "rnb": "R&B",
+      "jazz": "Jazz",
+      "classical": "Classical",
+      "chill": "Chill",
+      "focus": "Focus",
+      "gaming": "Gaming",
+      "anime": "アニメ"
+    }
+  }
+}

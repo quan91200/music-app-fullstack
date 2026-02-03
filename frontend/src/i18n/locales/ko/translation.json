@@ -1,0 +1,364 @@
+{
+  "premium": {
+    "badge": "프리미엄",
+    "hero": {
+      "title": "완전한 경험을解鎖하세요",
+      "subtitle": "고품질 음악에 무제한 액세스, 광고 없는 청취 및 독점 기능을 받아보세요. 오늘 수백만 명의 프리미엄 회원과 함께하세요."
+    },
+    "benefits": {
+      "title": "프리미엄으로 업그레이드하는 이유",
+      "audioQuality": {
+        "title": "하이파이 음질",
+        "description": "크리스탈처럼 맑은 320kbps 품질로 음악을 경험해보세요. 아티스트가意圖한 그대로 모든 디테일을 들을 수 있습니다."
+      },
+      "adFree": {
+        "title": "광고 없는 청취",
+        "description": "중단 없는 음악을 즐기세요. 광고도, 방해도 없이 순수한 음악만."
+      },
+      "offline": {
+        "title": "오프라인 모드",
+        "description": "좋아하는 노래를 다운로드하고 인터넷 없이도 어디에서나 들을 수 있습니다."
+      },
+      "unlimitedSkips": {
+        "title": "무제한 스킵",
+        "description": "원하는 만큼 노래를 스킵하세요. 플레이리스트를 완전히 제어할 수 있습니다."
+      },
+      "streamingQuality": {
+        "title": "데이터 절약",
+        "description": "스트리밍 품질을 선택하세요. 모바일에서는 데이터를 절약하고 WiFi에서는 고품질을 즐기세요."
+      },
+      "exclusiveContent": {
+        "title": "독점 콘텐츠",
+        "description": "탑 아티스트의 독점 릴리스, 조기 드롭 및 프리미엄 전용 콘텐츠에 액세스하세요."
+      }
+    },
+    "comparison": {
+      "title": "무료 vs 프리미엄",
+      "free": {
+        "title": "무료",
+        "standard": "표준 품질",
+        "withAds": "광고 포함",
+        "limited": "제한적",
+        "shuffle": "셔플만 가능",
+        "basic": "기본"
+      },
+      "premium": {
+        "title": "프리미엄",
+        "hifi": "하이파이 품질",
+        "noAds": "광고 없음",
+        "unlimited": "무제한",
+        "full": "완전한 제어"
+      },
+      "audio_quality": "오디오 품질",
+      "ads": "광고 없음",
+      "offline": "오프라인 모드",
+      "skips": "무제한 스킵",
+      "on_demand": "주문형 재생",
+      "social": "소셜 기능"
+    },
+    "pricing": {
+      "title": "플랜 선택",
+      "subtitle": "당신의 라이프스타일에 맞는 유연한 플랜. 언제든지 취소 가능."
+    },
+    "plans": {
+      "monthly": {
+        "name": "월간",
+        "period": "월"
+      },
+      "yearly": {
+        "name": "연간",
+        "period": "년",
+        "badge": "최고 가치"
+      },
+      "student": {
+        "name": "학생",
+        "period": "월",
+        "badge": "50% 할인",
+        "eligibility": "유효한 학생증 필요"
+      },
+      "savings": "{{percent}}% 절약"
+    },
+    "trust": {
+      "users": "활성 사용자",
+      "rating": "사용자 평가",
+      "guarantee": "일간 보증"
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "cancel": {
+        "question": "언제든지 구독을 취소할 수 있나요?",
+        "answer": "네, 프리미엄 구독은 언제든지 취소할 수 있습니다. 프리미엄 기능은 결제 기간 종료까지 활성 상태로 유지됩니다."
+      },
+      "devices": {
+        "question": "몇 대의 기기에서 사용할 수 있나요?",
+        "answer": "프리미엄은 최대 5대의 기기에서 동시에 사용할 수 있습니다. 오프라인 청취를 위해 최대 3대의 기기에 콘텐츠를 다운로드할 수 있습니다."
+      },
+      "offline": {
+        "question": "몇 곡을 다운로드할 수 있나요?",
+        "answer": "프리미엄을 통해 최대 10,000곡을 오프라인 청취용으로 다운로드할 수 있습니다. 다운로드는 활성 프리미엄 구독을 유지하는 동안 사용 가능합니다."
+      },
+      "family": {
+        "question": "가족 플랜이 있나요?",
+        "answer": "네! 가족 플랜을 통해 최대 6명의 가족 구성원이 하나의 구독으로 프리미엄 기능을 할인된 가격으로 이용할 수 있습니다."
+      }
+    },
+    "cta": {
+      "choosePlan": "플랜 선택"
+    }
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "loading_songs": "곡을 로딩 중...",
+    "loading_album": "앨범을 로딩 중...",
+    "loading_playlist": "플레이리스트를 로딩 중...",
+    "loading_profile": "프로필을 로딩 중...",
+    "error": "오류가 발생했습니다",
+    "success": "성공",
+    "logout": "로그아웃",
+    "settings": "설정",
+    "profile": "프로필",
+    "dashboard": "대시보드",
+    "upload": "업로드",
+    "premium": "Premium 탐색하기",
+    "free": "무료",
+    "user_default": "사용자",
+    "cancel": "취소",
+    "create": "만들기",
+    "name": "이름",
+    "you": "나",
+    "playlist": "플레이리스트",
+    "album": "앨범",
+    "albums": "앨범",
+    "song": "곡",
+    "songs": "곡",
+    "songs_count": "곡 {{count}}개",
+    "anonymous_artist": "알 수 없는 아티스트",
+    "choose_image": "이미지 선택",
+    "see_all": "모두 보기",
+    "recently_liked": "최근 좋아요 표시한 곡",
+    "no_liked_songs": "좋아요 표시한 곡이 없습니다.",
+    "date_added": "추가된 날짜",
+    "remove_image": "이미지 삭제",
+    "clear_file": "파일 지우기",
+    "expand": "펼치기",
+    "close": "닫기",
+    "clear_queue": "대기열 지우기",
+    "remove": "삭제"
+  },
+  "table_headers": {
+    "index": "#",
+    "title": "제목",
+    "album": "앨범",
+    "date_added": "추가된 날짜",
+    "duration": "재생 시간"
+  },
+  "toast": {
+    "added_to_favorites": "좋아하는 노래에 추가됨",
+    "removed_from_favorites": "좋아하는 노래에서 제거됨",
+    "profile_updated": "프로필이 성공적으로 업데이트됨",
+    "profile_update_failed": "프로필 업데이트 실패",
+    "album_updated": "앨범이 성공적으로 업데이트됨",
+    "album_update_failed": "앨범 업데이트 실패",
+    "playlist_updated": "플레이리스트가 성공적으로 업데이트됨",
+    "playlist_update_failed": "플레이리스트 업데이트 실패",
+    "added_to_queue": "대기열에 추가됨",
+    "added_to_playlist": "플레이리스트에 추가됨",
+    "play_next_added": "다음에 재생됨",
+    "logout_success": "로그아웃 성공",
+    "logout_failed": "로그아웃 실패",
+    "payment_success": "결제 성공! Premium에 오신 것을 환영합니다.",
+    "payment_canceled": "결제 취소됨",
+    "payment_error": "PayPal에서 오류가 발생했습니다. 다시 시도해 주세요.",
+    "payment_create_error": "주문 생성 실패",
+    "paypal_sdk_error": "PayPal SDK 로드 실패",
+    "profile_name_required": "이름을 입력해주세요",
+    "profile_updating": "프로필 업데이트 중...",
+    "album_title_required": "제목을 입력해주세요",
+    "album_updating": "앨범 업데이트 중...",
+    "playlist_title_required": "제목을 입력해주세요",
+    "playlist_updating": "플레이리스트 업데이트 중...",
+    "upload_audio_required": "음성 파일을 선택해주세요.",
+    "upload_uploading": "작업물을 업로드 중...",
+    "upload_success": "곡이 성공적으로 업로드되었습니다!",
+    "upload_failed": "업로드 실패했습니다. 다시 시도해 주세요.",
+    "pwa_offline_ready": "오프라인 사용 준비 완료!",
+    "pwa_update_available": "새 버전이 있습니다! 탭하여 업데이트."
+  },
+  "song_actions": {
+    "play_next": "다음에 재생"
+  },
+  "favorites": {
+    "add": "즐겨찾기에 추가",
+    "remove": "즐겨찾기에서 삭제"
+  },
+  "sidebar": {
+    "home": "홈",
+    "search": "검색",
+    "library": "내 라이브러리",
+    "create_playlist": "플레이리스트 만들기",
+    "create_album": "앨범 폴더 만들기",
+    "new_playlist": "새 플레이리스트",
+    "new_album": "새 앨범",
+    "liked_songs": "좋아요 표시한 곡",
+    "albums": "앨범",
+    "premium": "프리미엄",
+    "profile": "프로필",
+    "your_library": "내 라이브러리",
+    "filters": {
+      "all": "전체",
+      "playlists": "플레이리스트",
+      "albums": "앨범"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "좋은 아침입니다",
+      "afternoon": "좋은 오후입니다",
+      "evening": "좋은 저녁입니다"
+    },
+    "featured_albums": "추천 앨범",
+    "featured_playlists": "추천 플레이리스트",
+    "recently_played": "최근 재생한 항목",
+    "popular_songs": "인기 곡",
+    "empty_library": "라이브러리가 비어 있습니다.",
+    "upload_first": "첫 번째 곡을 업로드하세요"
+  },
+  "playing": {
+    "now_playing": "현재 재생 중",
+    "queue": "대기열",
+    "next_up": "다음 곡",
+    "unknown_artist": "알 수 없는 아티스트",
+    "artist_label": "아티스트",
+    "queue_empty": "대기열이 비어 있습니다",
+    "choose_song": "곡을 선택하여 상세 정보를 확인하세요",
+    "about_artist": "아티스트 정보",
+    "follow": "팔로우",
+    "followed_artist": "{{name}} 님을 팔로우했습니다",
+    "artist_bio": "{{name}} 님은 CobhamMusic의 재능 있는 크리에이터입니다. 팔로우하여 최신 소식을 받아보세요.",
+    "view_profile": "프로필 보기",
+    "like_song": "이 노래 좋아요",
+    "add_to_playlist": "재생목록에 추가",
+    "add_to_queue": "대기열에 추가",
+    "go_to_radio": "라디오로 가기",
+    "view_album": "앨범 보기",
+    "view_artist": "아티스트 보기"
+  },
+  "settings": {
+    "title": "설정",
+    "account": "계정",
+    "edit_profile": "프로필 수정",
+    "edit_profile_desc": "표시 이름 및 프로필 사진 변경",
+    "manage_sessions": "세션 관리",
+    "manage_sessions_desc": "로그인된 기기 확인 및 관리",
+    "audio_quality": "오디오 음질",
+    "streaming": "스트리밍",
+    "streaming_desc": "높음 (권장)",
+    "auto": "자동",
+    "normalize_volume": "음량 정규화",
+    "normalize_volume_desc": "모든 곡을 동일한 음량으로 설정",
+    "offline_mode": "오프라인 모드 (PWA)",
+    "offline_mode_label": "오프라인 모드",
+    "offline_mode_desc": "다운로드한 음악만 재생하여 데이터 절약",
+    "display": "화면",
+    "language": "언어",
+    "choose_language": "언어 선택",
+    "dark_mode": "다크 모드",
+    "always_on": "항상 켜짐"
+  },
+  "billing": {
+    "title": "결제 및 구독",
+    "subscription": {
+      "title": "현재 구독"
+    }
+  },
+  "auth": {
+    "login": "로그인",
+    "signup": "회원가입"
+  },
+  "artist_dashboard": {
+    "title": "아티스트 대시보드",
+    "welcome_back": "환영합니다, {{name}} 님. 현재 음악 활동 현황입니다.",
+    "verified": "인증된 아티스트",
+    "new_album": "새 앨범",
+    "new_release": "새 릴리스",
+    "stats": {
+      "total_songs": "총 곡 수",
+      "total_streams": "총 스트리밍",
+      "followers": "팔로워",
+      "trending": "트렌딩",
+      "streams_count": "{{count}}회 스트리밍",
+      "songs_count": "{{count}}곡"
+    },
+    "tabs": {
+      "songs": "곡",
+      "albums": "앨범",
+      "analytics": "분석",
+      "settings": "설정"
+    },
+    "modals": {
+      "create_album_title": "새 앨범 만들기",
+      "album_name_label": "앨범 이름",
+      "album_name_placeholder": "나의 멋진 앨범",
+      "create_album_btn": "앨범 만들기",
+      "creating": "생성 중...",
+      "edit_song_title": "곡 수정",
+      "artwork_label": "아트워크",
+      "song_title_label": "제목",
+      "artist_name_label": "아티스트 이름",
+      "genre_label": "장르",
+      "select_genre": "장르 선택",
+      "save_changes": "변경사항 저장",
+      "saving": "저장 중..."
+    },
+    "empty_states": {
+      "no_releases": "발매된 곡이 없습니다",
+      "no_releases_desc": "성공의 시작은 첫 번째 트랙부터입니다.",
+      "upload_first": "첫 번째 곡 업로드",
+      "no_albums": "생성된 앨범이 없습니다",
+      "no_albums_desc": "트랙을 앨범이나 폴더로 정리해 보세요.",
+      "create_first_album": "첫 앨범 만들기",
+      "coming_soon": "인사이트 및 설정 기능이 곧 출시됩니다."
+    },
+    "confirm": {
+      "delete_song_title": "릴리스를 삭제하시겠습니까?",
+      "delete_song_msg": "플랫폼에서 이 곡을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.",
+      "delete_album_title": "앨범을 삭제하시겠습니까?",
+      "delete_album_msg": "앨범을 삭제하시겠습니까? 곡은 유지되지만 분류가 해제됩니다.",
+      "deleting_song": "곡 삭제 중...",
+      "deleting_album": "앨범 삭제 중...",
+      "delete_success": "성공적으로 삭제되었습니다",
+      "delete_failed": "삭제 실패",
+      "confirm_btn": "확인",
+      "processing": "처리 중..."
+    },
+    "messages": {
+      "saving_changes": "변경사항 저장 중...",
+      "changes_saved": "변경사항이 저장되었습니다",
+      "save_failed": "곡 업데이트 실패",
+      "creating_album": "앨범 생성 중...",
+      "album_created": "앨범이 생성되었습니다",
+      "create_album_failed": "앨범 생성 실패"
+    }
+  },
+  "search": {
+    "placeholder": "무엇을 들을까요?",
+    "no_results": "검색 결과가 없습니다.",
+    "browse_all": "모두 탐색",
+    "categories": {
+      "vpop": "V-Pop",
+      "kpop": "K-Pop",
+      "pop": "Pop",
+      "hiphop": "Hip-Hop",
+      "dance": "Dance/Electronic",
+      "indie": "Indie",
+      "rock": "Rock",
+      "rnb": "R&B",
+      "jazz": "Jazz",
+      "classical": "Classical",
+      "chill": "Chill",
+      "focus": "Focus",
+      "gaming": "Gaming",
+      "anime": "애니메"
+    }
+  }
+}

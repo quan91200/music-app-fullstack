@@ -1,0 +1,427 @@
+{
+  "premium": {
+    "badge": "Premium",
+    "hero": {
+      "title": "Mở Khóa Trải Nghiệm Đầy Đủ",
+      "subtitle": "Truy cập không giới hạn nhạc chất lượng cao, nghe không quảng cáo và các tính năng độc quyền. Tham gia cùng hàng triệu thành viên Premium ngay hôm nay."
+    },
+    "benefits": {
+      "title": "Tại Sao Nên Nâng Cấp Premium?",
+      "audioQuality": {
+        "title": "Chất Lượng Âm Thanh Hi-Fi",
+        "description": "Trải nghiệm âm nhạc với chất lượng 320kbps tinh khiết. Nghe mọi chi tiết theo đúng ý nghệ sĩ."
+      },
+      "adFree": {
+        "title": "Nghe Không Quảng Cáo",
+        "description": "Thưởng thức âm nhạc không gián đoạn. Không quảng cáo, không phiền phức, chỉ có âm nhạc thuần túy."
+      },
+      "offline": {
+        "title": "Chế Độ Ngoại Tuyến",
+        "description": "Tải xuống bài hát yêu thích và nghe ở bất kỳ đâu, ngay cả khi không có internet."
+      },
+      "unlimitedSkips": {
+        "title": "Chuyển Bài Không Giới Hạn",
+        "description": "Chuyển bài thoải mái. Bạn hoàn toàn kiểm soát danh sách phát của mình."
+      },
+      "streamingQuality": {
+        "title": "Tiết Kiệm Dữ Liệu",
+        "description": "Chọn chất lượng phát trực tuyến. Tiết kiệm dữ liệu trên di động hoặc thưởng thức chất lượng cao trên WiFi."
+      },
+      "exclusiveContent": {
+        "title": "Nội Dung Độc Quyền",
+        "description": "Truy cập các bản phát hành độc quyền, phát hành sớm và nội dung chỉ dành cho Premium từ các nghệ sĩ hàng đầu."
+      }
+    },
+    "comparison": {
+      "title": "Miễn Phí vs Premium",
+      "free": {
+        "title": "Miễn Phí",
+        "standard": "Chất lượng tiêu chuẩn",
+        "withAds": "Có quảng cáo",
+        "limited": "Giới hạn",
+        "shuffle": "Chỉ ngẫu nhiên",
+        "basic": "Cơ bản"
+      },
+      "premium": {
+        "title": "Premium",
+        "hifi": "Chất lượng Hi-Fi",
+        "noAds": "Không quảng cáo",
+        "unlimited": "Không giới hạn",
+        "full": "Toàn quyền kiểm soát"
+      },
+      "audio_quality": "Chất Lượng Âm Thanh",
+      "ads": "Không Quảng Cáo",
+      "offline": "Chế Độ Ngoại Tuyến",
+      "skips": "Chuyển Bài Không Giới Hạn",
+      "on_demand": "Phát Theo Yêu Cầu",
+      "social": "Tính Năng Xã Hội"
+    },
+    "pricing": {
+      "title": "Chọn Gói Của Bạn",
+      "subtitle": "Các gói linh hoạt phù hợp với lối sống của bạn. Hủy bất kỳ lúc nào."
+    },
+    "plans": {
+      "monthly": {
+        "name": "Hàng Tháng",
+        "period": "tháng"
+      },
+      "yearly": {
+        "name": "Hàng Năm",
+        "period": "năm",
+        "badge": "Giá Tốt Nhất"
+      },
+      "student": {
+        "name": "Sinh Viên",
+        "period": "tháng",
+        "badge": "Giảm 50%",
+        "eligibility": "Yêu cầu thẻ sinh viên hợp lệ"
+      },
+      "current": "Gói hiện tại",
+      "savings": "Tiết kiệm {{percent}}"
+    },
+    "trust": {
+      "users": "Người dùng đang hoạt động",
+      "rating": "Đánh giá người dùng",
+      "guarantee": "Ngày đảm bảo"
+    },
+    "faq": {
+      "title": "Câu Hỏi Thường Gặp",
+      "cancel": {
+        "question": "Tôi có thể hủy đăng ký bất kỳ lúc nào không?",
+        "answer": "Có, bạn có thể hủy đăng ký Premium bất kỳ lúc nào. Các tính năng Premium của bạn sẽ vẫn hoạt động cho đến hết chu kỳ thanh toán."
+      },
+      "devices": {
+        "question": "Tôi có thể sử dụng bao nhiêu thiết bị?",
+        "answer": "Bạn có thể sử dụng Premium trên tối đa 5 thiết bị cùng lúc. Tải xuống nội dung để nghe ngoại tuyến trên tối đa 3 thiết bị."
+      },
+      "offline": {
+        "question": "Tôi có thể tải xuống bao nhiêu bài hát?",
+        "answer": "Premium cho phép bạn tải xuống tối đa 10.000 bài hát để nghe ngoại tuyến. Các bản tải xuống vẫn khả dụng miễn là bạn duy trì đăng ký Premium."
+      },
+      "family": {
+        "question": "Có gói gia đình không?",
+        "answer": "Có! Gói Gia Đình cho phép tối đa 6 thành viên trong gia đình thưởng thức các tính năng Premium dưới một đăng ký với mức giá ưu đãi."
+      }
+    },
+    "payment_secure": "Thanh toán an toàn với PayPal",
+    "cta": {
+      "choosePlan": "Chọn Gói",
+      "active": "Đang hoạt động"
+    }
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "loading_songs": "Đang tải bài hát...",
+    "loading_album": "Đang tải album...",
+    "loading_playlist": "Đang tải danh sách phát...",
+    "loading_profile": "Đang tải hồ sơ...",
+    "error": "Đã có lỗi xảy ra",
+    "success": "Thành công",
+    "logout": "Đăng xuất",
+    "settings": "Cài đặt",
+    "profile": "Hồ sơ",
+    "dashboard": "Bảng điều khiển",
+    "upload": "Tải lên",
+    "premium": "Khám phá Premium",
+    "free": "Miễn phí",
+    "user_default": "Người dùng",
+    "cancel": "Hủy",
+    "create": "Tạo",
+    "name": "Tên",
+    "you": "Bạn",
+    "playlist": "Danh sách phát",
+    "album": "Album",
+    "albums": "Album",
+    "song": "Bài hát",
+    "songs": "Bài hát",
+    "songs_count": "{{count}} bài hát",
+    "anonymous_artist": "Nghệ sĩ ẩn danh",
+    "choose_image": "Chọn ảnh",
+    "see_all": "Xem tất cả",
+    "recently_liked": "Bài hát đã thích gần đây",
+    "no_liked_songs": "Bạn chưa thích bài hát nào.",
+    "date_added": "Ngày thêm",
+    "expand_library": "Mở rộng thư viện",
+    "collapse_library": "Thu gọn thư viện",
+    "edit": "Chỉnh sửa",
+    "edit_profile": "Chỉnh sửa hồ sơ",
+    "cover": "Bìa",
+    "title": "Tiêu đề",
+    "description": "Mô tả",
+    "save": "Lưu",
+    "no_playlists": "Chưa có danh sách phát",
+    "copied": "Đã sao chép vào bộ nhớ tạm",
+    "back": "Quay lại",
+    "your_email": "email của bạn",
+    "date_locale": "vi-VN",
+    "remove_image": "Xóa ảnh",
+    "clear_file": "Xóa file",
+    "expand": "Mở rộng",
+    "close": "Đóng",
+    "clear_queue": "Xóa hàng chờ",
+    "remove": "Xóa"
+  },
+  "table_headers": {
+    "index": "#",
+    "title": "Tiêu đề",
+    "album": "Album",
+    "date_added": "Ngày thêm",
+    "duration": "Thời lượng"
+  },
+  "toast": {
+    "added_to_favorites": "Đã thêm vào Bài hát đã thích",
+    "removed_from_favorites": "Đã xóa khỏi Bài hát đã thích",
+    "profile_updated": "Cập nhật hồ sơ thành công",
+    "profile_update_failed": "Cập nhật hồ sơ thất bại",
+    "album_updated": "Cập nhật album thành công",
+    "album_update_failed": "Cập nhật album thất bại",
+    "playlist_updated": "Cập nhật danh sách phát thành công",
+    "playlist_update_failed": "Cập nhật danh sách phát thất bại",
+    "added_to_queue": "Đã thêm vào danh sách chờ",
+    "added_to_playlist": "Đã thêm vào danh sách phát",
+    "play_next_added": "Sẽ phát tiếp theo",
+    "logout_success": "Đăng xuất thành công",
+    "logout_failed": "Đăng xuất thất bại",
+    "payment_success": "Thanh toán thành công! Chào mừng bạn đến với Premium.",
+    "payment_canceled": "Đã hủy thanh toán",
+    "payment_error": "Có lỗi xảy ra với PayPal. Vui lòng thử lại.",
+    "payment_create_error": "Lỗi tạo đơn hàng",
+    "paypal_sdk_error": "Lỗi tải PayPal SDK",
+    "profile_name_required": "Họ tên không được để trống",
+    "profile_updating": "Đang cập nhật hồ sơ...",
+    "album_title_required": "Tiêu đề không được để trống",
+    "album_updating": "Đang cập nhật album...",
+    "playlist_title_required": "Tiêu đề không được để trống",
+    "playlist_updating": "Đang cập nhật danh sách phát...",
+    "upload_audio_required": "Vui lòng chọn file âm thanh.",
+    "upload_uploading": "Đang tải lên bài hát của bạn...",
+    "upload_success": "Tải lên thành công!",
+    "upload_failed": "Tải lên thất bại. Vui lòng thử lại.",
+    "pwa_offline_ready": "Ứng dụng đã sẵn sàng để sử dụng ngoại tuyến!",
+    "pwa_update_available": "Có phiên bản mới! Nhấn để cập nhật."
+  },
+  "song_actions": {
+    "more_options": "Thêm tùy chọn",
+    "add_to_playlist": "Thêm vào danh sách phát",
+    "add_to_queue": "Thêm vào danh sách chờ",
+    "play_next": "Phát tiếp theo",
+    "remove_from_playlist": "Xóa khỏi danh sách phát",
+    "go_to_artist": "Đi đến nghệ sĩ",
+    "go_to_album": "Đi đến album",
+    "share": "Chia sẻ"
+  },
+  "favorites": {
+    "add": "Thêm vào yêu thích",
+    "remove": "Xóa khỏi yêu thích"
+  },
+  "sidebar": {
+    "home": "Trang chủ",
+    "search": "Tìm kiếm",
+    "library": "Thư viện",
+    "create_playlist": "Tạo Playlist",
+    "create_album": "Tạo Thư mục Album",
+    "new_playlist": "Playlist mới",
+    "new_album": "Album mới",
+    "liked_songs": "Bài hát đã thích",
+    "albums": "Album",
+    "your_library": "Thư viện của bạn",
+    "premium": "Premium",
+    "profile": "Hồ sơ",
+    "filters": {
+      "all": "Tất cả",
+      "playlists": "Playlist",
+      "albums": "Album"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Chào buổi sáng",
+      "afternoon": "Chào buổi chiều",
+      "evening": "Chào buổi tối"
+    },
+    "featured_albums": "Album nổi bật",
+    "featured_playlists": "Top Playlists",
+    "recently_played": "Nghe gần đây",
+    "empty_library": "Thư viện của bạn đang trống.",
+    "upload_first": "Tải lên bài hát đầu tiên",
+    "popular_songs": "Phổ biến"
+  },
+  "playing": {
+    "now_playing": "Đang phát",
+    "queue": "Danh sách chờ",
+    "next_up": "Tiếp theo",
+    "unknown_artist": "Nghệ sĩ chưa rõ",
+    "artist_label": "Nghệ sĩ",
+    "queue_empty": "Danh sách chờ trống",
+    "choose_song": "Chọn một bài hát để xem chi tiết",
+    "about_artist": "Giới thiệu nghệ sĩ",
+    "follow": "Theo dõi",
+    "followed_artist": "Đã theo dõi {{name}}",
+    "artist_bio": "{{name}} là một nhà sáng tạo đầy tài năng trên CobhamMusic. Theo dõi để không bỏ lỡ những bản phát hành mới nhất và thông tin từ nghệ sĩ.",
+    "view_profile": "Xem hồ sơ",
+    "like_song": "Thích bài hát này",
+    "add_to_playlist": "Thêm vào playlist",
+    "add_to_queue": "Thêm vào hàng chờ",
+    "go_to_radio": "Đến radio",
+    "view_album": "Xem album",
+    "view_artist": "Xem nghệ sĩ"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "account": "Tài khoản",
+    "edit_profile": "Chỉnh sửa hồ sơ",
+    "edit_profile_desc": "Thay đổi tên hiển thị và ảnh đại diện",
+    "manage_sessions": "Quản lý phiên đăng nhập",
+    "manage_sessions_desc": "Xem và quản lý các thiết bị đã đăng nhập",
+    "audio_quality": "Chất lượng âm thanh",
+    "streaming": "Phát trực tuyến",
+    "streaming_desc": "Chất lượng cao (khuyên dùng)",
+    "auto": "Tự động",
+    "normalize_volume": "Chuẩn hóa âm lượng",
+    "normalize_volume_desc": "Đặt âm lượng như nhau cho mọi bài hát",
+    "offline_mode": "Chế độ ngoại tuyến (PWA)",
+    "offline_mode_label": "Chế độ ngoại tuyến",
+    "offline_mode_desc": "Chỉ phát nhạc đã tải về, tiết kiệm dữ liệu",
+    "display": "Hiển thị",
+    "language": "Ngôn ngữ",
+    "choose_language": "Chọn ngôn ngữ",
+    "dark_mode": "Chế độ tối",
+    "always_on": "Luôn bật"
+  },
+  "billing": {
+    "title": "Thanh toán & Đăng ký",
+    "subscription": {
+      "title": "Gói đăng ký hiện tại"
+    }
+  },
+  "subscription": {
+    "title": "Đăng ký hiện tại",
+    "no_subscription": "Bạn chưa có gói đăng ký nào",
+    "status": "Trạng thái",
+    "status_active": "Đang hoạt động",
+    "status_cancelled": "Đã hủy",
+    "status_expired": "Đã hết hạn",
+    "next_billing": "Gia hạn lần tiếp theo",
+    "days_remaining": "Còn {{days}} ngày",
+    "monthly": "tháng",
+    "yearly": "năm",
+    "features": "Tính năng bao gồm",
+    "more_features": "tính năng khác",
+    "upgrade": "Nâng cấp",
+    "cancel": "Hủy đăng ký",
+    "renew": "Gia hạn",
+    "resume": "Tiếp tục đăng ký"
+  },
+  "history": {
+    "title": "Lịch sử thanh toán",
+    "invoice": "Hóa đơn",
+    "date": "Ngày",
+    "description": "Mô tả",
+    "amount": "Số tiền",
+    "status": "Trạng thái",
+    "status_paid": "Đã thanh toán",
+    "status_pending": "Chờ thanh toán",
+    "status_failed": "Thất bại",
+    "status_refunded": "Đã hoàn tiền",
+    "download": "Tải xuống",
+    "view": "Xem chi tiết",
+    "view_all": "Xem tất cả",
+    "no_invoices": "Chưa có hóa đơn nào"
+  },
+  "notifications": {
+    "payment_set_default": "Đã đặt phương thức thanh toán mặc định",
+    "payment_deleted": "Đã xóa phương thức thanh toán",
+    "subscription_cancelled": "Đã hủy đăng ký",
+    "invoice_downloaded": "Đã tải hóa đơn"
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "signup": "Đăng ký"
+  },
+  "artist_dashboard": {
+    "title": "Bảng điều khiển Nghệ sĩ",
+    "welcome_back": "Chào mừng trở lại, {{name}}. Đây là những gì đang diễn ra với âm nhạc của bạn.",
+    "verified": "Nghệ sĩ xác minh",
+    "new_album": "Album mới",
+    "new_release": "Bản phát hành mới",
+    "stats": {
+      "total_songs": "Tổng số bài hát",
+      "total_streams": "Tổng lượt nghe",
+      "followers": "Người theo dõi",
+      "trending": "Xu hướng",
+      "streams_count": "{{count}} lượt nghe",
+      "songs_count": "{{count}} bài hát"
+    },
+    "tabs": {
+      "songs": "Bài hát",
+      "albums": "Album",
+      "analytics": "Phân tích",
+      "settings": "Cài đặt"
+    },
+    "modals": {
+      "create_album_title": "Tạo Album mới",
+      "album_name_label": "Tên Album",
+      "album_name_placeholder": "Album Tuyệt vời của tôi",
+      "create_album_btn": "Tạo Album",
+      "creating": "Đang tạo...",
+      "edit_song_title": "Chỉnh sửa bài hát",
+      "artwork_label": "Ảnh bìa",
+      "song_title_label": "Tiêu đề",
+      "artist_name_label": "Tên Nghệ sĩ",
+      "genre_label": "Thể loại",
+      "select_genre": "Chọn thể loại",
+      "save_changes": "Lưu thay đổi",
+      "saving": "Đang lưu..."
+    },
+    "empty_states": {
+      "no_releases": "Chưa có bản phát hành nào",
+      "no_releases_desc": "Thành công bắt đầu từ bản nhạc đầu tiên của bạn. Hãy bắt đầu hành trình ngay hôm nay.",
+      "upload_first": "Tải lên bài hát đầu tiên",
+      "no_albums": "Chưa có album nào được tạo",
+      "no_albums_desc": "Sắp xếp các bản nhạc của bạn thành album hoặc các thư mục ý nghĩa.",
+      "create_first_album": "Tạo album đầu tiên",
+      "coming_soon": "Thông tin chi tiết và Cấu hình sẽ sớm ra mắt."
+    },
+    "confirm": {
+      "delete_song_title": "Xóa bản phát hành?",
+      "delete_song_msg": "Bạn có chắc chắn muốn xóa bài hát này khỏi nền tảng? Hành động này không thể hoàn tác.",
+      "delete_album_title": "Xóa Album?",
+      "delete_album_msg": "Bạn có chắc chắn muốn xóa album này? Các bài hát của bạn sẽ vẫn còn trên nền tảng nhưng sẽ không còn thuộc album này.",
+      "deleting_song": "Đang xóa bài hát...",
+      "deleting_album": "Đang xóa album...",
+      "delete_success": "Đã xóa thành công",
+      "delete_failed": "Xóa thất bại",
+      "confirm_btn": "Xác nhận",
+      "processing": "Đang xử lý..."
+    },
+    "messages": {
+      "saving_changes": "Đang lưu thay đổi...",
+      "changes_saved": "Đã lưu thay đổi",
+      "save_failed": "Lưu thất bại",
+      "creating_album": "Đang tạo album...",
+      "album_created": "Đã tạo album",
+      "create_album_failed": "Tạo album thất bại"
+    }
+  },
+  "search": {
+    "placeholder": "Bạn muốn nghe gì?",
+    "no_results": "Không tìm thấy kết quả nào.",
+    "browse_all": "Duyệt Tất cả",
+    "categories": {
+      "vpop": "V-Pop",
+      "kpop": "K-Pop",
+      "pop": "Pop",
+      "hiphop": "Hip-Hop",
+      "dance": "Dance/Electronic",
+      "indie": "Indie",
+      "rock": "Rock",
+      "rnb": "R&B",
+      "jazz": "Jazz",
+      "classical": "Classical",
+      "chill": "Chill",
+      "focus": "Focus",
+      "gaming": "Gaming",
+      "anime": "Nhạc Anime"
+    }
+  }
+}

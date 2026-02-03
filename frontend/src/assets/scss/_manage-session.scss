@@ -1,0 +1,89 @@
+@use 'variables' as *;
+
+.manage-session-page {
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+
+  .session-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 32px;
+
+    .device-info-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .device-icon-wrapper {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: rgba($primary, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .device-details {
+        .device-name {
+          font-weight: 600;
+          font-size: 16px;
+          margin-bottom: 4px;
+        }
+
+        .device-status {
+          font-size: 14px;
+          color: $primary;
+        }
+      }
+    }
+
+    .logout-btn {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.3);
+      text-transform: none;
+      padding: 6px 16px;
+      border-radius: 20px;
+      
+      &:hover {
+        border-color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  .empty-sessions {
+    text-align: center;
+    padding: 40px;
+    color: $text-muted;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+
+    .empty-icon {
+      opacity: 0.2;
+      margin-bottom: 16px;
+    }
+
+    .empty-hint {
+      font-size: 13px;
+      margin-top: 8px;
+      opacity: 0.7;
+    }
+  }
+}

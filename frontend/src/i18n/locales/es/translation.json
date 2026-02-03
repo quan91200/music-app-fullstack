@@ -1,0 +1,364 @@
+{
+  "premium": {
+    "badge": "Premium",
+    "hero": {
+      "title": "Desbloquea la Experiencia Completa",
+      "subtitle": "Obtén acceso ilimitado a música de alta calidad, escucha sin anuncios y funciones exclusivas. Únete a millones de miembros Premium hoy."
+    },
+    "benefits": {
+      "title": "¿Por qué ser Premium?",
+      "audioQuality": {
+        "title": "Calidad de Audio Hi-Fi",
+        "description": "Experimenta música con calidad cristalina de 320kbps. Escucha cada detalle como el artista lo pretendía."
+      },
+      "adFree": {
+        "title": "Escucha sin Anuncios",
+        "description": "Disfruta de música ininterrumpida. Sin anuncios, sin interrupciones, solo música pura."
+      },
+      "offline": {
+        "title": "Modo Offline",
+        "description": "Descarga tus canciones favoritas y escúchalas en cualquier lugar, incluso sin internet."
+      },
+      "unlimitedSkips": {
+        "title": "Saltos Ilimitados",
+        "description": "Salta tantas canciones como quieras. Tienes el control completo de tu playlist."
+      },
+      "streamingQuality": {
+        "title": "Ahorro de Datos",
+        "description": "Elige tu calidad de streaming. Ahorra datos en móvil o disfruta de alta calidad en WiFi."
+      },
+      "exclusiveContent": {
+        "title": "Contenido Exclusivo",
+        "description": "Accede a lanzamientos exclusivos, early drops y contenido solo para Premium de los mejores artistas."
+      }
+    },
+    "comparison": {
+      "title": "Gratis vs Premium",
+      "free": {
+        "title": "Gratis",
+        "standard": "Calidad estándar",
+        "withAds": "Con anuncios",
+        "limited": "Limitado",
+        "shuffle": "Solo aleatorio",
+        "basic": "Básico"
+      },
+      "premium": {
+        "title": "Premium",
+        "hifi": "Calidad Hi-Fi",
+        "noAds": "Sin anuncios",
+        "unlimited": "Ilimitado",
+        "full": "Control total"
+      },
+      "audio_quality": "Calidad de Audio",
+      "ads": "Sin Publicidad",
+      "offline": "Modo Sin Conexión",
+      "skips": "Saltos Ilimitados",
+      "on_demand": "Reproducción a la Carta",
+      "social": "Funciones Sociales"
+    },
+    "pricing": {
+      "title": "Elige tu Plan",
+      "subtitle": "Planes flexibles que se adaptan a tu estilo de vida. Cancela cuando quieras."
+    },
+    "plans": {
+      "monthly": {
+        "name": "Mensual",
+        "period": "mes"
+      },
+      "yearly": {
+        "name": "Anual",
+        "period": "año",
+        "badge": "Mejor valor"
+      },
+      "student": {
+        "name": "Estudiante",
+        "period": "mes",
+        "badge": "50% descuento",
+        "eligibility": "Se requiere carnet de estudiante válido"
+      },
+      "savings": "Ahorra {{percent}}"
+    },
+    "trust": {
+      "users": "Usuarios activos",
+      "rating": "Valoración de usuarios",
+      "guarantee": "Días de garantía"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "cancel": {
+        "question": "¿Puedo cancelar mi suscripción en cualquier momento?",
+        "answer": "Sí, puedes cancelar tu suscripción Premium en cualquier momento. Tus funciones Premium permanecerán activas hasta el final de tu período de facturación."
+      },
+      "devices": {
+        "question": "¿En cuántos dispositivos puedo usarlo?",
+        "answer": "Puedes usar Premium en hasta 5 dispositivos simultáneamente. Descarga contenido para escuchar offline en hasta 3 dispositivos."
+      },
+      "offline": {
+        "question": "¿Cuántas canciones puedo descargar?",
+        "answer": "Premium te permite descargar hasta 10,000 canciones para escuchar offline. Las descargas permanecen disponibles mientras mantengas una suscripción Premium activa."
+      },
+      "family": {
+        "question": "¿Hay un plan familiar disponible?",
+        "answer": "¡Sí! Nuestro Plan Familiar permite que hasta 6 miembros de la familia disfruten de funciones Premium bajo una suscripción a precio reducido."
+      }
+    },
+    "cta": {
+      "choosePlan": "Elegir Plan"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "loading_songs": "Cargando canciones...",
+    "loading_album": "Cargando álbum...",
+    "loading_playlist": "Cargando playlist...",
+    "loading_profile": "Cargando perfil...",
+    "error": "Ha ocurrido un error",
+    "success": "Éxito",
+    "logout": "Cerrar sesión",
+    "settings": "Configuración",
+    "profile": "Perfil",
+    "dashboard": "Panel de control",
+    "upload": "Subir",
+    "premium": "Explorar Premium",
+    "free": "Gratis",
+    "user_default": "Usuario",
+    "cancel": "Cancelar",
+    "create": "Crear",
+    "name": "Nombre",
+    "you": "Tú",
+    "playlist": "Playlist",
+    "album": "Álbum",
+    "albums": "Álbumes",
+    "song": "Canción",
+    "songs": "Canciones",
+    "songs_count": "{{count}} canciones",
+    "anonymous_artist": "Artista desconocido",
+    "choose_image": "Elegir imagen",
+    "see_all": "Ver todo",
+    "recently_liked": "Canciones favoritas recientes",
+    "no_liked_songs": "Aún no tienes canciones favoritas.",
+    "date_added": "Fecha de adición",
+    "remove_image": "Eliminar imagen",
+    "clear_file": "Borrar archivo",
+    "expand": "Expandir",
+    "close": "Cerrar",
+    "clear_queue": "Borrar cola",
+    "remove": "Eliminar"
+  },
+  "table_headers": {
+    "index": "#",
+    "title": "Título",
+    "album": "Álbum",
+    "date_added": "Fecha de adición",
+    "duration": "Duración"
+  },
+  "toast": {
+    "added_to_favorites": "Agregado a Canciones Favoritas",
+    "removed_from_favorites": "Eliminado de Canciones Favoritas",
+    "profile_updated": "Perfil actualizado exitosamente",
+    "profile_update_failed": "Error al actualizar perfil",
+    "album_updated": "Álbum actualizado exitosamente",
+    "album_update_failed": "Error al actualizar álbum",
+    "playlist_updated": "Playlist actualizada exitosamente",
+    "playlist_update_failed": "Error al actualizar playlist",
+    "added_to_queue": "Agregado a la cola",
+    "added_to_playlist": "Agregado a la playlist",
+    "play_next_added": "Se reproducirá después",
+    "logout_success": "Sesión cerrada exitosamente",
+    "logout_failed": "Error al cerrar sesión",
+    "payment_success": "¡Pago exitoso! Bienvenido a Premium.",
+    "payment_canceled": "Pago cancelado",
+    "payment_error": "Ocurrió un error con PayPal. Por favor, inténtelo de nuevo.",
+    "payment_create_error": "No se pudo crear el pedido",
+    "paypal_sdk_error": "Error al cargar PayPal SDK",
+    "profile_name_required": "El nombre completo es requerido",
+    "profile_updating": "Actualizando perfil...",
+    "album_title_required": "El título es requerido",
+    "album_updating": "Actualizando álbum...",
+    "playlist_title_required": "El título es requerido",
+    "playlist_updating": "Actualizando playlist...",
+    "upload_audio_required": "Por favor, seleccione un archivo de audio.",
+    "upload_uploading": "Subiendo su obra maestra...",
+    "upload_success": "¡Canción subida exitosamente!",
+    "upload_failed": "Error al subir. Por favor, inténtelo de nuevo.",
+    "pwa_offline_ready": "¡Aplicación lista para uso sin conexión!",
+    "pwa_update_available": "¡Nueva versión disponible! Toque para actualizar."
+  },
+  "song_actions": {
+    "play_next": "Reproducir después"
+  },
+  "favorites": {
+    "add": "Agregar a favoritos",
+    "remove": "Quitar de favoritos"
+  },
+  "sidebar": {
+    "home": "Inicio",
+    "search": "Buscar",
+    "library": "Tu biblioteca",
+    "create_playlist": "Crear playlist",
+    "create_album": "Crear carpeta de álbum",
+    "new_playlist": "Nueva playlist",
+    "new_album": "Nuevo álbum",
+    "liked_songs": "Canciones favoritas",
+    "albums": "Álbumes",
+    "premium": "Premium",
+    "profile": "Perfil",
+    "your_library": "Tu biblioteca",
+    "filters": {
+      "all": "Todo",
+      "playlists": "Playlists",
+      "albums": "Álbumes"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Buen día",
+      "afternoon": "Buenas tardes",
+      "evening": "Buenas noches"
+    },
+    "featured_albums": "Álbumes destacados",
+    "featured_playlists": "Top Playlists",
+    "recently_played": "Escuchado recientemente",
+    "popular_songs": "Canciones populares",
+    "empty_library": "Tu biblioteca está vacía.",
+    "upload_first": "Sube tu primera canción"
+  },
+  "playing": {
+    "now_playing": "Reproduciendo",
+    "queue": "Cola",
+    "next_up": "A continuación",
+    "unknown_artist": "Artista desconocido",
+    "artist_label": "Artista",
+    "queue_empty": "La cola está vacía",
+    "choose_song": "Elige una canción para ver detalles",
+    "about_artist": "Sobre el artista",
+    "follow": "Seguir",
+    "followed_artist": "Ahora sigues a {{name}}",
+    "artist_bio": "{{name}} es un creador talentoso en CobhamMusic. Síguelo para estar al día.",
+    "view_profile": "Ver perfil",
+    "like_song": "Me gusta esta canción",
+    "add_to_playlist": "Agregar a playlist",
+    "add_to_queue": "Agregar a la cola",
+    "go_to_radio": "Ir a la radio",
+    "view_album": "Ver álbum",
+    "view_artist": "Ver artista"
+  },
+  "settings": {
+    "title": "Configuración",
+    "account": "Cuenta",
+    "edit_profile": "Editar perfil",
+    "edit_profile_desc": "Cambiar nombre y foto",
+    "manage_sessions": "Gestionar sesiones",
+    "manage_sessions_desc": "Gestionar dispositivos",
+    "audio_quality": "Calidad de audio",
+    "streaming": "Streaming",
+    "streaming_desc": "Alta (recomendado)",
+    "auto": "Auto",
+    "normalize_volume": "Normalizar volumen",
+    "normalize_volume_desc": "Mismo volumen para todas las canciones",
+    "offline_mode": "Modo offline (PWA)",
+    "offline_mode_label": "Modo offline",
+    "offline_mode_desc": "Ahorrar datos",
+    "display": "Pantalla",
+    "language": "Idioma",
+    "choose_language": "Elegir idioma",
+    "dark_mode": "Modo oscuro",
+    "always_on": "Siempre activado"
+  },
+  "billing": {
+    "title": "Facturación y Suscripción",
+    "subscription": {
+      "title": "Suscripción actual"
+    }
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "signup": "Registrarse"
+  },
+  "artist_dashboard": {
+    "title": "Panel de Artista",
+    "welcome_back": "Bienvenido, {{name}}. Así va tu música.",
+    "verified": "Artista verificado",
+    "new_album": "Nuevo Álbum",
+    "new_release": "Nuevo Lanzamiento",
+    "stats": {
+      "total_songs": "Total Canciones",
+      "total_streams": "Total Reproducciones",
+      "followers": "Seguidores",
+      "trending": "Tendencia",
+      "streams_count": "{{count}} reproducciones",
+      "songs_count": "{{count}} canciones"
+    },
+    "tabs": {
+      "songs": "Canciones",
+      "albums": "Álbumes",
+      "analytics": "Estadísticas",
+      "settings": "Configuración"
+    },
+    "modals": {
+      "create_album_title": "Crear nuevo álbum",
+      "album_name_label": "Nombre del álbum",
+      "album_name_placeholder": "Mi álbum increíble",
+      "create_album_btn": "Crear álbum",
+      "creating": "Creando...",
+      "edit_song_title": "Editar canción",
+      "artwork_label": "Portada",
+      "song_title_label": "Título",
+      "artist_name_label": "Nombre del artista",
+      "genre_label": "Género",
+      "select_genre": "Seleccionar género",
+      "save_changes": "Guardar cambios",
+      "saving": "Guardando..."
+    },
+    "empty_states": {
+      "no_releases": "Sin lanzamientos",
+      "no_releases_desc": "El éxito comienza con tu primera pista.",
+      "upload_first": "Subir primera canción",
+      "no_albums": "Sin álbumes",
+      "no_albums_desc": "Organiza tus pistas en álbumes.",
+      "create_first_album": "Crear primer álbum",
+      "coming_soon": "Estadísticas próximamente."
+    },
+    "confirm": {
+      "delete_song_title": "¿Eliminar lanzamiento?",
+      "delete_song_msg": "¿Estás seguro? Esta acción no se puede deshacer.",
+      "delete_album_title": "¿Eliminar álbum?",
+      "delete_album_msg": "¿Estás seguro? Las canciones permanecerán.",
+      "deleting_song": "Eliminando...",
+      "deleting_album": "Eliminando...",
+      "delete_success": "Eliminado con éxito",
+      "delete_failed": "Error al eliminar",
+      "confirm_btn": "Confirmar",
+      "processing": "Procesando..."
+    },
+    "messages": {
+      "saving_changes": "Guardando...",
+      "changes_saved": "Cambios guardados",
+      "save_failed": "Error al actualizar",
+      "creating_album": "Creando álbum...",
+      "album_created": "Álbum creado",
+      "create_album_failed": "Error al crear álbum"
+    }
+  },
+  "search": {
+    "placeholder": "¿Qué quieres escuchar?",
+    "no_results": "No se encontraron resultados para tu búsqueda.",
+    "browse_all": "Explorar todo",
+    "categories": {
+      "vpop": "V-Pop",
+      "kpop": "K-Pop",
+      "pop": "Pop",
+      "hiphop": "Hip-Hop",
+      "dance": "Dance/Electronic",
+      "indie": "Indie",
+      "rock": "Rock",
+      "rnb": "R&B",
+      "jazz": "Jazz",
+      "classical": "Classical",
+      "chill": "Chill",
+      "focus": "Focus",
+      "gaming": "Gaming",
+      "anime": "Anime"
+    }
+  }
+}

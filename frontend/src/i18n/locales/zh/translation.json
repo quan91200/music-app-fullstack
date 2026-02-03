@@ -1,0 +1,364 @@
+{
+  "premium": {
+    "badge": "Premium",
+    "hero": {
+      "title": "解锁完整体验",
+      "subtitle": "获得无限访问高品质音乐、无广告收听和独家功能。立即加入数百万 Premium 会员。"
+    },
+    "benefits": {
+      "title": "为什么要升级 Premium？",
+      "audioQuality": {
+        "title": "高保真音质",
+        "description": "以水晶般清晰的 320kbps 品质体验音乐。聆听艺术家预期的每一个细节。"
+      },
+      "adFree": {
+        "title": "无广告收听",
+        "description": "享受不间断的音乐。没有广告，没有打扰，只有纯粹的音乐。"
+      },
+      "offline": {
+        "title": "离线模式",
+        "description": "下载您喜爱的歌曲，即使没有互联网也能在任何地方收听。"
+      },
+      "unlimitedSkips": {
+        "title": "无限跳过",
+        "description": "随心所欲地跳过歌曲。您可以完全控制自己的播放列表。"
+      },
+      "streamingQuality": {
+        "title": "省流量",
+        "description": "选择您的流媒体质量。在移动设备上节省数据或在 WiFi 上享受高品质。"
+      },
+      "exclusiveContent": {
+        "title": "独家内容",
+        "description": "访问顶级艺术家的独家发布、抢先体验和 Premium 专属内容。"
+      }
+    },
+    "comparison": {
+      "title": "免费版 vs Premium",
+      "free": {
+        "title": "免费版",
+        "standard": "标准品质",
+        "withAds": "有广告",
+        "limited": "有限制",
+        "shuffle": "仅随机播放",
+        "basic": "基础"
+      },
+      "premium": {
+        "title": "Premium",
+        "hifi": "高保真品质",
+        "noAds": "无广告",
+        "unlimited": "无限制",
+        "full": "完全控制"
+      },
+      "audio_quality": "音频品质",
+      "ads": "无广告",
+      "offline": "离线模式",
+      "skips": "无限跳过",
+      "on_demand": "点播播放",
+      "social": "社交功能"
+    },
+    "pricing": {
+      "title": "选择您的方案",
+      "subtitle": "适合您生活方式的灵活方案。随时取消。"
+    },
+    "plans": {
+      "monthly": {
+        "name": "月付",
+        "period": "月"
+      },
+      "yearly": {
+        "name": "年付",
+        "period": "年",
+        "badge": "最超值"
+      },
+      "student": {
+        "name": "学生",
+        "period": "月",
+        "badge": "5折优惠",
+        "eligibility": "需要有效学生证"
+      },
+      "savings": "节省 {{percent}}"
+    },
+    "trust": {
+      "users": "活跃用户",
+      "rating": "用户评分",
+      "guarantee": "天保证"
+    },
+    "faq": {
+      "title": "常见问题",
+      "cancel": {
+        "question": "我可以随时取消订阅吗？",
+        "answer": "是的，您可以随时取消 Premium 订阅。您的 Premium 功能将保持有效直到计费周期结束。"
+      },
+      "devices": {
+        "question": "我可以在多少台设备上使用？",
+        "answer": "您可以在最多 5 台设备上同时使用 Premium。可以在最多 3 台设备上下载内容以供离线收听。"
+      },
+      "offline": {
+        "question": "我可以下载多少首歌曲？",
+        "answer": "Premium 允许您下载多达 10,000 首歌曲以供离线收听。只要您保持有效的 Premium 订阅，下载内容就保持可用。"
+      },
+      "family": {
+        "question": "有家庭方案吗？",
+        "answer": "有！我们的家庭方案允许最多 6 位家庭成员在一个订阅下以折扣价格享受 Premium 功能。"
+      }
+    },
+    "cta": {
+      "choosePlan": "选择方案"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "loading_songs": "正在加载歌曲...",
+    "loading_album": "正在加载专辑...",
+    "loading_playlist": "正在加载播放列表...",
+    "loading_profile": "正在加载个人资料...",
+    "error": "发生错误",
+    "success": "成功",
+    "logout": "登出",
+    "settings": "设置",
+    "profile": "个人资料",
+    "dashboard": "控制台",
+    "upload": "上传",
+    "premium": "探索 Premium",
+    "free": "免费",
+    "user_default": "用户",
+    "cancel": "取消",
+    "create": "创建",
+    "name": "名字",
+    "you": "你",
+    "playlist": "播放列表",
+    "album": "专辑",
+    "albums": "专辑",
+    "song": "歌曲",
+    "songs": "歌曲",
+    "songs_count": "{{count}} 首歌曲",
+    "anonymous_artist": "未知艺术家",
+    "choose_image": "选择图片",
+    "see_all": "查看全部",
+    "recently_liked": "最近喜欢的歌曲",
+    "no_liked_songs": "你还没有喜欢的歌曲。",
+    "date_added": "添加日期",
+    "remove_image": "删除图片",
+    "clear_file": "清除文件",
+    "expand": "展开",
+    "close": "关闭",
+    "clear_queue": "清除队列",
+    "remove": "移除"
+  },
+  "table_headers": {
+    "index": "#",
+    "title": "标题",
+    "album": "专辑",
+    "date_added": "添加日期",
+    "duration": "时长"
+  },
+  "toast": {
+    "added_to_favorites": "已添加到喜欢的歌曲",
+    "removed_from_favorites": "已从喜欢的歌曲中移除",
+    "profile_updated": "个人资料更新成功",
+    "profile_update_failed": "个人资料更新失败",
+    "album_updated": "专辑更新成功",
+    "album_update_failed": "专辑更新失败",
+    "playlist_updated": "播放列表更新成功",
+    "playlist_update_failed": "播放列表更新失败",
+    "added_to_queue": "已添加到播放队列",
+    "added_to_playlist": "已添加到播放列表",
+    "play_next_added": "将播放下一首",
+    "logout_success": "登出成功",
+    "logout_failed": "登出失败",
+    "payment_success": "支付成功！欢迎来到Premium。",
+    "payment_canceled": "支付已取消",
+    "payment_error": "PayPal发生错误。请重试。",
+    "payment_create_error": "创建订单失败",
+    "paypal_sdk_error": "加载PayPal SDK失败",
+    "profile_name_required": "姓名为必填项",
+    "profile_updating": "正在更新个人资料...",
+    "album_title_required": "标题为必填项",
+    "album_updating": "正在更新专辑...",
+    "playlist_title_required": "标题为必填项",
+    "playlist_updating": "正在更新播放列表...",
+    "upload_audio_required": "请选择音频文件。",
+    "upload_uploading": "正在上传您的杰作...",
+    "upload_success": "歌曲上传成功！",
+    "upload_failed": "上传失败。请重试。",
+    "pwa_offline_ready": "应用已准备好离线使用！",
+    "pwa_update_available": "有新版本可用！点击更新。"
+  },
+  "song_actions": {
+    "play_next": "播放下一首"
+  },
+  "favorites": {
+    "add": "添加到收藏",
+    "remove": "从收藏移除"
+  },
+  "sidebar": {
+    "home": "首页",
+    "search": "搜索",
+    "library": "你的媒体库",
+    "create_playlist": "创建播放列表",
+    "create_album": "创建专辑文件夹",
+    "new_playlist": "新播放列表",
+    "new_album": "新专辑",
+    "liked_songs": "喜欢的歌曲",
+    "albums": "专辑",
+    "premium": "Premium",
+    "profile": "个人资料",
+    "your_library": "你的媒体库",
+    "filters": {
+      "all": "全部",
+      "playlists": "播放列表",
+      "albums": "专辑"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "早上好",
+      "afternoon": "下午好",
+      "evening": "晚上好"
+    },
+    "featured_albums": "精选专辑",
+    "featured_playlists": "热门播放列表",
+    "recently_played": "最近播放",
+    "popular_songs": "热门歌曲",
+    "empty_library": "你的媒体库是空的。",
+    "upload_first": "上传你的第一首歌"
+  },
+  "playing": {
+    "now_playing": "正在播放",
+    "queue": "播放队列",
+    "next_up": "下一首",
+    "unknown_artist": "未知艺术家",
+    "artist_label": "艺术家",
+    "queue_empty": "队列为空",
+    "choose_song": "选择一首歌查看详情",
+    "about_artist": "关于艺术家",
+    "follow": "关注",
+    "followed_artist": "已关注 {{name}}",
+    "artist_bio": "{{name}} 是 CobhamMusic 上的一位才华横溢的创作者。关注以获取最新发布。",
+    "view_profile": "查看个人资料",
+    "like_song": "喜欢这首歌",
+    "add_to_playlist": "添加到播放列表",
+    "add_to_queue": "添加到队列",
+    "go_to_radio": "去电台",
+    "view_album": "查看专辑",
+    "view_artist": "查看艺术家"
+  },
+  "settings": {
+    "title": "设置",
+    "account": "账号",
+    "edit_profile": "编辑个人资料",
+    "edit_profile_desc": "更改显示名称和头像",
+    "manage_sessions": "管理登录会话",
+    "manage_sessions_desc": "查看并管理已登录设备",
+    "audio_quality": "音质",
+    "streaming": "在线播放",
+    "streaming_desc": "高质量 (推荐)",
+    "auto": "自动",
+    "normalize_volume": "音量标准化",
+    "normalize_volume_desc": "为所有歌曲设置相同的音量",
+    "offline_mode": "离线模式 (PWA)",
+    "offline_mode_label": "离线模式",
+    "offline_mode_desc": "仅播放已下载音乐，节省流量",
+    "display": "显示",
+    "language": "语言",
+    "choose_language": "选择语言",
+    "dark_mode": "深色模式",
+    "always_on": "始终开启"
+  },
+  "billing": {
+    "title": "账单与订阅",
+    "subscription": {
+      "title": "当前订阅"
+    }
+  },
+  "auth": {
+    "login": "登录",
+    "signup": "注册"
+  },
+  "artist_dashboard": {
+    "title": "艺术家控制台",
+    "welcome_back": "欢迎回来，{{name}}。这是您的音乐动态。",
+    "verified": "认证艺术家",
+    "new_album": "新专辑",
+    "new_release": "新发布",
+    "stats": {
+      "total_songs": "歌曲总数",
+      "total_streams": "总播放量",
+      "followers": "粉丝",
+      "trending": "趋势",
+      "streams_count": "{{count}} 次播放",
+      "songs_count": "{{count}} 首歌曲"
+    },
+    "tabs": {
+      "songs": "歌曲",
+      "albums": "专辑",
+      "analytics": "分析",
+      "settings": "设置"
+    },
+    "modals": {
+      "create_album_title": "创建新专辑",
+      "album_name_label": "专辑名称",
+      "album_name_placeholder": "我的精彩专辑",
+      "create_album_btn": "创建专辑",
+      "creating": "创建中...",
+      "edit_song_title": "编辑歌曲",
+      "artwork_label": "封面图",
+      "song_title_label": "标题",
+      "artist_name_label": "艺术家名称",
+      "genre_label": "流派",
+      "select_genre": "选择流派",
+      "save_changes": "保存更改",
+      "saving": "保存中..."
+    },
+    "empty_states": {
+      "no_releases": "尚无发布作品",
+      "no_releases_desc": "成功始于您的第一首曲目。",
+      "upload_first": "上传第一首歌",
+      "no_albums": "未创建专辑",
+      "no_albums_desc": "将您的曲目整理到专辑或文件夹中。",
+      "create_first_album": "创建首张专辑",
+      "coming_soon": "洞察分析和配置功能即将推出。"
+    },
+    "confirm": {
+      "delete_song_title": "移除发布？",
+      "delete_song_msg": "您确定要从平台移除这首歌吗？此操作无法撤销。",
+      "delete_album_title": "删除专辑？",
+      "delete_album_msg": "您确定要删除此专辑吗？您的歌曲将保留在平台上，但将取消分配。",
+      "deleting_song": "正在删除歌曲...",
+      "deleting_album": "正在删除专辑...",
+      "delete_success": "删除成功",
+      "delete_failed": "删除失败",
+      "confirm_btn": "确认",
+      "processing": "处理中..."
+    },
+    "messages": {
+      "saving_changes": "正在保存更改...",
+      "changes_saved": "更改已保存",
+      "save_failed": "更新歌曲失败",
+      "creating_album": "正在创建专辑...",
+      "album_created": "专辑已创建",
+      "create_album_failed": "创建专辑失败"
+    }
+  },
+  "search": {
+    "placeholder": "你想听什么？",
+    "no_results": "未找到搜索结果。",
+    "browse_all": "浏览全部",
+    "categories": {
+      "vpop": "V-Pop",
+      "kpop": "K-Pop",
+      "pop": "Pop",
+      "hiphop": "Hip-Hop",
+      "dance": "Dance/Electronic",
+      "indie": "Indie",
+      "rock": "Rock",
+      "rnb": "R&B",
+      "jazz": "Jazz",
+      "classical": "Classical",
+      "chill": "Chill",
+      "focus": "Focus",
+      "gaming": "Gaming",
+      "anime": "动漫"
+    }
+  }
+}

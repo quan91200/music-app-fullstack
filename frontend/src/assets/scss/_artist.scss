@@ -1,0 +1,85 @@
+.artist-profile-view {
+  .page-header {
+    background: linear-gradient(180deg, var(--header-color, #404040) 0%, rgba(18, 18, 18, 0.4) 100%);
+    
+    .artist-verified {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      
+      .verified-badge {
+        background: #3d91f4;
+        color: white;
+        border-radius: 50%;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    
+    h1 {
+      font-size: 96px;
+      margin: 8px 0 32px -4px;
+    }
+  }
+
+  .artist-bio-section {
+    padding: 24px 32px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin: 24px 32px;
+    
+    h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    
+    .bio-content {
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 800px;
+    }
+  }
+
+  .artist-sections {
+    padding: 0 32px 48px;
+    
+    .section {
+      margin-top: 40px;
+      
+      .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        
+        h2 {
+          font-size: 24px;
+          font-weight: 800;
+          letter-spacing: -0.5px;
+        }
+        
+        .see-all {
+          font-size: 14px;
+          font-weight: 700;
+          color: rgba(255, 255, 255, 0.7);
+          background: none;
+          border: none;
+          cursor: pointer;
+          
+          &:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

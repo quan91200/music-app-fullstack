@@ -1,0 +1,19 @@
+{
+  "name": "music-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "memory:setup": "node .agent/scripts/setup-memory.js",
+    "memory:setup:quick": "node .agent/scripts/setup-memory.js --quick",
+    "memory:validate": "node .agent/scripts/validate-memory.js",
+    "memory:validate:verbose": "node .agent/scripts/validate-memory.js --verbose",
+    "memory:show": "cat .agent/project-memory.md"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

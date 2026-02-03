@@ -1,0 +1,22 @@
+# ==============================================================================
+# PROJECT ROOT CONFIGURATION
+# ==============================================================================
+
+# Agent & System
+/.agent/
+/.vscode/
+/.idea/
+/node_modules/
+
+# Common OS files
+.DS_Store
+Thumbs.db
+
+# Design & Resources
+/design-system/
+/images/temp/
+
+# Note: Individual folder ignores are handled in /backend and /frontend
+
+.env
+.env.*

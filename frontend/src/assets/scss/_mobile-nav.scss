@@ -1,0 +1,40 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.mobile-bottom-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: $text-muted;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 8px;
+    flex: 1;
+
+    &.active {
+      color: #fff;
+      
+      svg {
+        transform: scale(1.1);
+        color: $primary;
+      }
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      font-size: 10px;
+      font-weight: 500;
+    }
+  }
+}

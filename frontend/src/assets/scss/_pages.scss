@@ -1,0 +1,237 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.profile-page {
+  padding: 32px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  min-height: 100%;
+
+  @include mobile {
+    padding: 80px 16px 32px;
+  }
+
+  .profile-header-large {
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .avatar-wrapper-header {
+      position: relative;
+      cursor: pointer;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+      .avatar-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover .avatar-overlay {
+        opacity: 1;
+      }
+    }
+
+    .profile-info {
+      flex: 1;
+
+      .name-with-edit {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @include mobile {
+          justify-content: center;
+        }
+
+        h1 {
+          font-size: 80px;
+          font-weight: 950;
+          margin: 0;
+          letter-spacing: -4px;
+          cursor: pointer;
+
+          @include mobile {
+            font-size: 36px;
+            letter-spacing: -1px;
+          }
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+
+      .profile-meta {
+        color: $text-muted;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 8px;
+
+        @include mobile {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .profile-section {
+    margin-bottom: 48px;
+
+    @include mobile {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px;
+
+      @include mobile {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.album-view {
+  --header-color: #4338ca;
+}
+
+.playlist-view {
+  .header-bg {
+    background-color: #27272a;
+  }
+}
+
+.hidden-input {
+  display: none;
+}
+
+// Edit Dialog Styles - Handled by .premium-dialog and .create-item-form in _common.scss
+
+// Global styles for editable headers
+.page-header {
+  .artwork-wrapper.editable {
+    position: relative;
+    cursor: pointer;
+
+    .edit-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: white;
+      gap: 8px;
+      font-weight: 600;
+    }
+
+    &:hover .edit-overlay {
+      opacity: 1;
+    }
+  }
+
+  h1.editable-title {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.settings-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  .settings-section {
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: $text-main;
+    }
+
+    .settings-list {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.2s;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .item-info {
+    .item-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: $text-main;
+      display: block;
+    }
+
+    .item-desc {
+      font-size: 12px;
+      color: $text-muted;
+      margin-top: 4px;
+    }
+  }
+
+  .item-action {
+    color: $text-muted;
+  }
+}

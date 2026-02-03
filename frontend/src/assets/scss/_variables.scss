@@ -1,0 +1,54 @@
+// Abstract tokens for CobhamMusic
+$primary: #6366f1; // Neon Indigo
+$primary-hover: #4f46e5;
+$bg-dark: #09090b;
+$surface: rgba(24, 24, 27, 0.6); // Zinc-900 with transparency
+$text-main: #fafafa;
+$text-muted: #a1a1aa;
+$border-color: rgba(255, 255, 255, 0.1);
+$glass-bg: rgba(255, 255, 255, 0.03);
+$glass-blur: blur(12px);
+
+// Spacing
+$nav-width: 280px;
+$player-height: 90px;
+$playing-view-width: 300px;
+$mobile-nav-height: 64px;
+
+// Breakpoints
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1440px;
+
+// Mixins
+@mixin glass-card {
+  background: $glass-bg;
+  backdrop-filter: $glass-blur;
+  -webkit-backdrop-filter: $glass-blur;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+}
+
+@mixin custom-scroll {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+  
+  // Firefox support
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}

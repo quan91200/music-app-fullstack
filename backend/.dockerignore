@@ -1,0 +1,7 @@
+# Backend Docker Ignore
+node_modules/
+logs/
+uploads/
+*.log
+.env
+.env.*

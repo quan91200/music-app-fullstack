@@ -1,0 +1,223 @@
+@use 'variables' as *;
+
+.file-picker {
+  width: 100%;
+  min-height: 120px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 2px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  aspect-ratio: 16/7; // Default is rectangle
+
+  &.rectangle {
+    border-radius: 14px;
+  }
+
+  &.square {
+    aspect-ratio: 1/1;
+    border-radius: 24px;
+  }
+
+  &.circle {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    .icon-wrapper svg {
+      transform: scale(1.1) translateY(-3px);
+      color: $primary;
+      filter: drop-shadow(0 0 10px rgba($primary, 0.5));
+    }
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  .picker-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    width: 100%;
+    z-index: 2;
+
+    .icon-wrapper {
+      transition: all 0.4s ease;
+      color: #a1a1aa;
+
+      .active-icon {
+        color: $primary;
+      }
+    }
+
+    .text-wrapper {
+      .label {
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 4px;
+        word-break: break-all;
+        max-width: 100%;
+        padding: 0 10px;
+      }
+
+      .hint {
+        font-size: 11px;
+        color: $text-muted;
+        font-weight: 600;
+        opacity: 0.6;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .clear-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(8px);
+      z-index: 10;
+
+      &:hover {
+        background: #ef4444;
+        border-color: #ef4444;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .preview-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .clear-btn {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(8px);
+
+      &:hover {
+        background: #ef4444;
+        border-color: #ef4444;
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.4s ease;
+      backdrop-filter: blur(6px);
+      
+      span {
+        font-weight: 800;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        transform: translateY(10px);
+        transition: transform 0.4s ease;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+      
+      .overlay {
+        opacity: 1;
+        span {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  &.has-file {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  // Subtle animated border for empty state
+  .picker-border-animation {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 2px solid $primary;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
+
+  &:hover .picker-border-animation {
+    opacity: 0.1;
+  }
+}
