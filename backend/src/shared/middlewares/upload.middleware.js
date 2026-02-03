@@ -18,7 +18,7 @@ class UploadMiddleware {
   /**
    * Filter for audio and image files.
    */
-  fileFilter = (req, file, cb) => {
+  fileFilter = (_req, file, cb) => {
     Logger.debug(`[Multer] Processing file: ${file.fieldname} (${file.mimetype})`);
 
     if (file.fieldname === 'audio') {

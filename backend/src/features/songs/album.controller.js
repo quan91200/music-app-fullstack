@@ -30,7 +30,7 @@ class AlbumController extends BaseController {
     }
   };
 
-  getAll = async (req, res, next) => {
+  getAll = async (_req, res, next) => {
     try {
       const albums = await AlbumService.getAllAlbums();
       return this.sendSuccess(res, albums);

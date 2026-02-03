@@ -19,7 +19,7 @@ export const setupRoutes = (app) => {
   app.use('/api/payments', paymentRoutes);
 
   // Health Check
-  app.get('/health', (req, res) => {
+  app.get('/health', (_req, res) => {
     res.status(HTTP_STATUS.OK).json({
       status: 'UP',
       timestamp: new Date().toISOString()

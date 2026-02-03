@@ -32,22 +32,22 @@ class SongRoutes {
 
     this.router.get('/albums/:id', cache.handle(60), AlbumController.getById);
 
-    this.router.post('/albums', authenticate, (req, res, next) => {
+    this.router.post('/albums', authenticate, (_req, _res, next) => {
       cache.clear('/api/songs/albums');
       next();
     }, AlbumController.create);
 
-    this.router.delete('/albums/:id', authenticate, (req, res, next) => {
+    this.router.delete('/albums/:id', authenticate, (_req, _res, next) => {
       cache.clear('/api/songs/albums');
       next();
     }, AlbumController.delete);
 
-    this.router.patch('/albums/:id', authenticate, (req, res, next) => {
+    this.router.patch('/albums/:id', authenticate, (_req, _res, next) => {
       cache.clear('/api/songs/albums');
       next();
     }, upload.single('cover'), AlbumController.update);
 
-    this.router.put('/albums/:id', authenticate, (req, res, next) => {
+    this.router.put('/albums/:id', authenticate, (_req, _res, next) => {
       cache.clear('/api/songs/albums');
       next();
     }, upload.single('cover'), AlbumController.update);
@@ -59,14 +59,14 @@ class SongRoutes {
      */
     this.router.post(
       '/upload',
-      (req, res, next) => {
+      (req, _res, next) => {
         const msg = `[Upload Route Hit] Headers: Content-Length=${req.headers['content-length']}`;
         console.log(msg);
         Logger.info(msg);
         next();
       },
       authenticate,
-      (req, res, next) => { cache.clear('/api/songs'); next(); },
+      (_req, _res, next) => { cache.clear('/api/songs'); next(); },
       upload.fields([
         { name: 'audio', maxCount: 1 },
         { name: 'cover', maxCount: 1 }
@@ -84,7 +84,7 @@ class SongRoutes {
      * @route DELETE /api/songs/:id
      * @desc Delete a song
      */
-    this.router.delete('/:id', authenticate, (req, res, next) => { cache.clear('/api/songs'); next(); }, SongController.delete);
+    this.router.delete('/:id', authenticate, (_req, _res, next) => { cache.clear('/api/songs'); next(); }, SongController.delete);
 
     /**
      * @route PATCH /api/songs/:id
@@ -93,7 +93,7 @@ class SongRoutes {
     this.router.patch(
       '/:id',
       authenticate,
-      (req, res, next) => { cache.clear('/api/songs'); next(); },
+      (_req, _res, next) => { cache.clear('/api/songs'); next(); },
       upload.fields([{ name: 'cover', maxCount: 1 }]),
       SongController.update
     );

@@ -30,7 +30,7 @@ class SongController extends BaseController {
     }
   };
 
-  getAll = async (req, res, next) => {
+  getAll = async (_req, res, next) => {
     try {
       const songs = await SongService.getAllSongs();
       return this.sendSuccess(res, songs.map(s => SongDTO.fromModel(s)));

@@ -14,7 +14,9 @@ export default [
     rules: {
       'no-unused-vars': ['error', {
         varsIgnorePattern: '^[A-Z_]',
+        args: 'all',
         argsIgnorePattern: '^_',
+        caughtErrors: 'all',
         caughtErrorsIgnorePattern: '^_'
       }],
       'no-undef': 'error',

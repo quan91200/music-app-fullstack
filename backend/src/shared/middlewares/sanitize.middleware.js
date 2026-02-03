@@ -11,7 +11,7 @@ import Sanitizer from '../utils/Sanitizer.js';
  * @param {Object} res - Response.
  * @param {Function} next - Next middleware.
  */
-export const sanitizeRequest = (req, res, next) => {
+export const sanitizeRequest = (req, _res, next) => {
   if (req.body) {
     req.body = Sanitizer.sanitize(req.body);
   }

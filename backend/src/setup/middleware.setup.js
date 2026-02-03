@@ -12,7 +12,7 @@ import express from 'express';
  */
 export const setupMiddlewares = (app) => {
   // Request Logging for Development (Moved to Top)
-  app.use((req, res, next) => {
+  app.use((req, _res, next) => {
     if (req.url !== '/health') {
       const msg = `🌍 [Global Hit] ${req.method} ${req.url} (Time: ${Date.now()})`;
       console.log(msg); // Force console
